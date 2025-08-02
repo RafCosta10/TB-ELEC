@@ -30,8 +30,8 @@ The contents are provided for use *within the team only* and may not be copied, 
 ## 🛠 Getting Started
 
 - Please contact the Electrical Subteam Lead to request access or onboarding help.  
-- Refer to the [Engineering Wiki][https://www.notion.so/235706a097758006bf46ff2deb52e041?v=235706a0977580078a06000c86afb2b6] for tutorials and guidelines.  
-- Check the [Projects Dashboard][https://www.notion.so/235706a097758070890ec096f4407239?v=235706a097758027b426000c77134180] for current tasks and assignments.
+- Refer to the [Engineering Wiki](https://www.notion.so/235706a097758006bf46ff2deb52e041?v=235706a0977580078a06000c86afb2b6) for tutorials and guidelines.  
+- Check the [Projects Dashboard](https://www.notion.so/235706a097758070890ec096f4407239?v=235706a097758027b426000c77134180) for current tasks and assignments.
 
 ---
 
