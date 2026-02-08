@@ -9,7 +9,7 @@ int fault(int state);
 int reset_fault(int state);
 
 int main() {
-    enum current_state = BOOT;
+    int current_state = BOOT;
 
     current_state = arm(current_state);
     current_state = arm(current_state);
