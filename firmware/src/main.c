@@ -250,7 +250,7 @@ void print_telemetry(SystemData *data) {
     printf("\033[H");
     
     printf("\n========================================\n");
-    printf("   TBM BRAIN SIMULATOR - LIVE VIEW\n");
+    printf("   TBM SIMULATOR - LIVE VIEW\n");
     printf("========================================\n");
     printf("STATE:       %-20s\n", getStateName(current_state));
     printf("----------------------------------------\n");
