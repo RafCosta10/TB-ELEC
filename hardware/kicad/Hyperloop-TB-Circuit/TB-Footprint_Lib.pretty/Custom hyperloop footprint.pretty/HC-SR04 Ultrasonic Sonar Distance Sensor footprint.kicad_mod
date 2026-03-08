@@ -1,0 +1,106 @@
+(footprint "HC-SR04 Ultrasonic Sonar Distance Sensor footprint"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "U**"
+		(at -5.5 2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a9379fd6-8f66-49ca-9624-16e0294c6764")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "HC-SR04"
+		(at -5.5 3.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "71545b34-97dc-48ce-862a-77600950efc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d32ee033-d4b4-4467-a801-beafc3649196")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08c057f0-8e33-449f-a64f-8c05b8c320d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at -5.5 5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d58bc98b-c1c5-439d-9fc3-fc18d58a2345")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 1.9 1.9)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "0df7bec4-89f9-4459-879f-ec01a7edc4a3")
+	)
+	(pad "1" thru_hole roundrect
+		(at 2.54 0)
+		(size 1.9 1.9)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "3b640ee2-cdfe-40f9-acff-605e95de1c11")
+	)
+	(pad "1" thru_hole roundrect
+		(at 5.08 0)
+		(size 1.9 1.9)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "89dfacba-aec6-40cf-a65f-c1004b7100d1")
+	)
+	(pad "1" thru_hole roundrect
+		(at 7.62 0)
+		(size 1.9 1.9)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "ec2c1f11-49f3-48ca-9072-5ddb62acd094")
+	)
+	(embedded_fonts no)
+)
