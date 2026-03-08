@@ -1,22 +1,48 @@
+import json
+import os
+from pathlib import Path
+import socket
 import customtkinter as ctk
-import random
 
-app = ctk.CTk()
-app.title("System UI")
-app.geometry("600x400")
+HOST = "127.0.0.1"
+PORT = 5555
 
-state = "IDLE"
+IDLE = "IDLE"
+ARMED = "ARMED"
+RUNNING = "RUNNING"
+FAULT = "FAULT"
+SHUTDOWN = "SHUTDOWN"
 
-armed = False
-running = False
-fault = False
-connected = True  # placeholder for now
-shutdown = False
-current = 1.20     # placeholder
-temperature = 200.0 # placeholder
-voltage = 4.6
-augerRPM = 0
-targetRPM = 0
+if os.name == "posix" and not os.environ.get("DISPLAY"):
+    # Allow launching from SSH into the active local Pi desktop session.
+    if Path("/tmp/.X11-unix/X0").exists():
+        os.environ["DISPLAY"] = ":0"
+        os.environ.setdefault("XAUTHORITY", str(Path.home() / ".Xauthority"))
+
+try:
+    app = ctk.CTk()
+except Exception as exc:
+    raise RuntimeError(
+        "No graphical display is available. Run from Pi desktop, or use DISPLAY=:0/X11 forwarding."
+    ) from exc
+
+app.title("TBM System UI")
+app.geometry("700x620")
+
+current_state = IDLE
+connected = False
+
+auger_rpm = 0.0
+target_rpm = 0.0
+temperature = 25.0
+chainage = 0.0
+voltage = 0.0
+current = 0.0
+load_factor = 1.0
+e_stop_pressed = False
+
+sock = None
+rx_buffer = ""
 
 state_label = ctk.CTkLabel(
     app,
@@ -27,14 +53,14 @@ state_label.pack(pady=40)
 
 conn_label = ctk.CTkLabel(
     app,
-    text="Connected to controller: YES",
+    text="Connected to controller: NO",
     font=ctk.CTkFont(size=18)
 )
 conn_label.pack(pady=(0, 20))
 
 voltage_label = ctk.CTkLabel(
     app,
-    text=f"Voltage: {voltage:.3f} V",
+    text="Voltage: --- V",
     font=ctk.CTkFont(size=20)
 )
 voltage_label.pack(pady=10)
@@ -48,7 +74,7 @@ current_label.pack(pady=10)
 
 temp_label = ctk.CTkLabel(
     app,
-    text="Temperature: --- °C",
+    text="Temperature: --- C",
     font=ctk.CTkFont(size=20)
 )
 temp_label.pack(pady=10)
@@ -60,196 +86,303 @@ rpm_label = ctk.CTkLabel(
 )
 rpm_label.pack(pady=10)
 
+estop_label = ctk.CTkLabel(
+    app,
+    text="E-STOP: Released",
+    font=ctk.CTkFont(size=18)
+)
+estop_label.pack(pady=8)
+
+
+def set_state(new_state: str):
+    global current_state
+    current_state = new_state
+    state_label.configure(text=f"SYSTEM STATE: {new_state}")
+
+
 def set_controls_enabled(enabled: bool):
-    state = "normal" if enabled else "disabled"
-    arm_button.configure(state=state)
-    start_button.configure(state=state)
-    increase_rpm_button.configure(state=state)
-    decrease_rpm_button.configure(state=state)
-    reset_button.configure(state=state)
-    emergency_stop_button.configure(state=state)
-    shutdown_button.configure(state=state)
+    button_state = "normal" if enabled else "disabled"
+    arm_button.configure(state=button_state)
+    disarm_button.configure(state=button_state)
+    start_button.configure(state=button_state)
+    increase_rpm_button.configure(state=button_state)
+    decrease_rpm_button.configure(state=button_state)
+    simulate_overheat_button.configure(state=button_state)
+    release_estop_button.configure(state=button_state)
+    reset_button.configure(state=button_state)
+    emergency_stop_button.configure(state=button_state)
+    shutdown_button.configure(state=button_state)
     power_on_button.configure(state="normal")
 
-def update_telemetry():
-    global voltage, current, temperature, running, connected, fault, augerRPM, targetRPM
 
-    if running and connected and (not fault):
-        voltage += random.uniform(-0.02, 0.02)
-        current += random.uniform(-0.05, 0.05)
-        temperature += random.uniform(-0.08, 0.08)
+def disconnect_firmware():
+    global sock, connected, rx_buffer
 
-        voltage_label.configure(text=f"Voltage: {voltage:.3f} V")
-        current_label.configure(text=f"Current: {current:.3f} A")
-        temp_label.configure(text=f"Temperature: {temperature:.2f} °C")
-        rpm_label.configure(text=f"RPM: {augerRPM:.2f} / {targetRPM:.2f}")
-    else:
-        voltage_label.configure(text="Voltage: --- V")
-        current_label.configure(text="Current: --- A")
-        temp_label.configure(text="Temperature: --- °C")
-        rpm_label.configure(text=f"RPM: --- / ---")
-
-    app.after(200, update_telemetry)
+    connected = False
+    rx_buffer = ""
+    if sock is not None:
+        try:
+            sock.close()
+        except OSError:
+            pass
+        sock = None
 
 
-def armed_system():
-    global armed, fault
+def connect_firmware():
+    global sock, connected
 
-    if fault or (not connected):
+    if connected:
         return
 
-    if not armed:
-        armed = True
-        state_label.configure(text="SYSTEM STATE: ARMED")
-        arm_button.configure(text="DISARM")
-    else:
-        armed = False
-        state_label.configure(text="SYSTEM STATE: IDLE")
-        arm_button.configure(text="ARM")
+    try:
+        new_sock = socket.create_connection((HOST, PORT), timeout=0.15)
+        new_sock.setblocking(False)
+    except OSError:
+        connected = False
+        return
+
+    sock = new_sock
+    connected = True
+
+
+def send_command(cmd: str):
+    if not connected or sock is None:
+        return
+
+    try:
+        sock.sendall((cmd + "\n").encode("ascii"))
+    except OSError:
+        disconnect_firmware()
+
+
+def apply_telemetry(payload: dict):
+    global auger_rpm, target_rpm, temperature, chainage
+    global voltage, current, load_factor, e_stop_pressed
+
+    set_state(payload.get("state", current_state))
+    voltage = float(payload.get("voltage", voltage))
+    current = float(payload.get("current", current))
+    temperature = float(payload.get("temperature", temperature))
+    auger_rpm = float(payload.get("auger_rpm", auger_rpm))
+    target_rpm = float(payload.get("target_rpm", target_rpm))
+    load_factor = float(payload.get("load_factor", load_factor))
+    chainage = float(payload.get("chainage", chainage))
+    e_stop_pressed = bool(payload.get("e_stop_pressed", e_stop_pressed))
+
+
+def poll_firmware():
+    global rx_buffer
+
+    if not connected or sock is None:
+        return
+
+    while True:
+        try:
+            chunk = sock.recv(4096)
+        except BlockingIOError:
+            return
+        except OSError:
+            disconnect_firmware()
+            return
+
+        if not chunk:
+            disconnect_firmware()
+            return
+
+        rx_buffer += chunk.decode("utf-8", errors="ignore")
+
+        while "\n" in rx_buffer:
+            line, rx_buffer = rx_buffer.split("\n", 1)
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                payload = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            apply_telemetry(payload)
+
+
+def update_view():
+    conn_label.configure(text=f"Connected to controller: {'YES' if connected else 'NO'}")
+    voltage_label.configure(text=f"Voltage: {voltage:.3f} V" if connected else "Voltage: --- V")
+    current_label.configure(text=f"Current: {current:.3f} A" if connected else "Current: --- A")
+    temp_label.configure(text=f"Temperature: {temperature:.2f} C" if connected else "Temperature: --- C")
+    rpm_label.configure(text=f"RPM: {auger_rpm:.0f} / {target_rpm:.0f}" if connected else "RPM: --- / ---")
+    estop_label.configure(text=f"E-STOP: {'PRESSED' if e_stop_pressed else 'Released'}")
+
+
+def telemetry_tick():
+    connect_firmware()
+    poll_firmware()
+
+    if connected and current_state != SHUTDOWN:
+        set_controls_enabled(True)
+    elif not connected:
+        set_controls_enabled(False)
+
+    update_view()
+    app.after(100, telemetry_tick)
+
+
+def arm_or_disarm_system():
+    send_command("a")
+
+
+command_frame = ctk.CTkFrame(app)
+command_frame.pack(pady=12, padx=20, fill="x")
+
+for col in range(3):
+    command_frame.grid_columnconfigure(col, weight=1)
+
 
 arm_button = ctk.CTkButton(
-    app,
-    text="ARM",
+    command_frame,
+    text="ARM (a)",
     fg_color="orange",
-    hover_color="dark orange",
-    command=armed_system
+    hover_color="#b56d00",
+    command=arm_or_disarm_system
 )
-arm_button.pack(pady=20)
+arm_button.grid(row=0, column=0, padx=6, pady=6, sticky="ew")
+
+
+def disarm_system():
+    send_command("d")
+
+
+disarm_button = ctk.CTkButton(
+    command_frame,
+    text="DISARM (d)",
+    fg_color="#8a8a8a",
+    hover_color="#6f6f6f",
+    command=disarm_system
+)
+disarm_button.grid(row=0, column=1, padx=6, pady=6, sticky="ew")
 
 
 def start_system():
-    global running, fault, connected, armed
-    if fault or (not connected):
-        return
-    if armed:
-        running = True
-        state_label.configure(text="SYSTEM STATE: RUNNING")
-        update_telemetry()
+    send_command("s")
 
 
 start_button = ctk.CTkButton(
-    app,
-    text="START",
+    command_frame,
+    text="START (s)",
     fg_color="green",
     hover_color="dark green",
     command=start_system
 )
-start_button.pack(pady=20)
+start_button.grid(row=0, column=2, padx=6, pady=6, sticky="ew")
+
 
 def increase_rpm():
-    global targetRPM
-    targetRPM += 100
-    rpm_label.configure(text=f"RPM: {augerRPM} / {targetRPM}")
+    send_command("+")
+
 
 def decrease_rpm():
-    global targetRPM
-    targetRPM = max(0, targetRPM - 100)
-    rpm_label.configure(text=f"RPM: {augerRPM} / {targetRPM}")
+    send_command("-")
+
 
 increase_rpm_button = ctk.CTkButton(
-    app,
-    text="RPM +",
+    command_frame,
+    text="RPM + (+)",
     command=increase_rpm
 )
-increase_rpm_button.pack(pady=5)
+increase_rpm_button.grid(row=1, column=0, padx=6, pady=6, sticky="ew")
 
 decrease_rpm_button = ctk.CTkButton(
-    app,
-    text="RPM -",
+    command_frame,
+    text="RPM - (-)",
     command=decrease_rpm
 )
-decrease_rpm_button.pack(pady=5)
+decrease_rpm_button.grid(row=1, column=1, padx=6, pady=6, sticky="ew")
 
-def stop_system():
-    global running, fault, armed, targetRPM
-    running = False
-    fault = True
-    armed = False
-    arm_button.configure(text="ARM")
-    targetRPM = 0
-    state_label.configure(text="SYSTEM STATE: FAULT")
-    voltage_label.configure(text="Voltage: 0 V")
+
+def simulate_overheat():
+    send_command("t")
+
+
+simulate_overheat_button = ctk.CTkButton(
+    command_frame,
+    text="SIM OVERHEAT (t)",
+    fg_color="#d26700",
+    hover_color="#a34f00",
+    command=simulate_overheat
+)
+simulate_overheat_button.grid(row=1, column=2, padx=6, pady=6, sticky="ew")
+
+
+def trigger_estop():
+    send_command("e")
+
+
+def release_estop():
+    send_command("u")
+
 
 emergency_stop_button = ctk.CTkButton(
-    app,
-    text="EMERGENCY STOP",
-    width=75,
-    height=75,
-    corner_radius=50,
+    command_frame,
+    text="EMERGENCY STOP (e)",
+    width=170,
+    height=44,
+    corner_radius=8,
     fg_color="red",
-    hover_color="dark red",
-    command=stop_system
+    hover_color="#a80000",
+    command=trigger_estop
 )
-emergency_stop_button.pack(pady=20)
+emergency_stop_button.grid(row=2, column=0, padx=6, pady=6, sticky="ew")
+
+
+release_estop_button = ctk.CTkButton(
+    command_frame,
+    text="RELEASE E-STOP (u)",
+    fg_color="#3f7a40",
+    hover_color="#2f5c30",
+    command=release_estop
+)
+release_estop_button.grid(row=2, column=1, padx=6, pady=6, sticky="ew")
+
 
 def reset_fault():
-    global fault, running, armed
-    if fault:
-        fault = False
-        running = False
-        armed = False
-        arm_button.configure(text="ARM")
-        state_label.configure(text="SYSTEM STATE: IDLE")
+    send_command("r")
 
 
 reset_button = ctk.CTkButton(
-    app,
-    text="RESET FAULT",
+    command_frame,
+    text="RESET FAULT (r)",
     fg_color="#c99700",
     hover_color="#a67f00",
     command=reset_fault
 )
-reset_button.pack(pady=10)
+reset_button.grid(row=2, column=2, padx=6, pady=6, sticky="ew")
+
 
 def shutdown_system():
-    global shutdown, running, armed, fault, targetRPM
-
-    shutdown = True
-
-    running = False
-    armed = False
-    fault = False
-    targetRPM = 0
-
-    arm_button.configure(text="ARM")
-    state_label.configure(text="SYSTEM STATE: SHUTDOWN")
-
-    # disable all controls except POWER ON
-    set_controls_enabled(False)
+    send_command("x")
 
 
 def power_on_system():
-    global shutdown, running, armed, fault
-
-    shutdown = False
-    running = False
-    armed = False
-    fault = False
-
-    state_label.configure(text="SYSTEM STATE: IDLE")
-    arm_button.configure(text="ARM")
-
-    # re-enable controls
-    set_controls_enabled(True)
+    connect_firmware()
 
 
 shutdown_button = ctk.CTkButton(
-    app,
-    text="SHUTDOWN",
+    command_frame,
+    text="SHUTDOWN (x)",
     fg_color="#444444",
     hover_color="#333333",
     command=shutdown_system
 )
-shutdown_button.pack(pady=8)
+shutdown_button.grid(row=3, column=0, padx=6, pady=(6, 10), sticky="ew")
 
 power_on_button = ctk.CTkButton(
-    app,
-    text="POWER ON",
+    command_frame,
+    text="POWER ON (Reconnect)",
     command=power_on_system
 )
-power_on_button.pack(pady=8)
+power_on_button.grid(row=3, column=1, columnspan=2, padx=6, pady=(6, 10), sticky="ew")
 
 
-update_telemetry()
+set_controls_enabled(False)
+update_view()
+telemetry_tick()
 
 app.mainloop()

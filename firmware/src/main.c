@@ -1,14 +1,24 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <time.h>
 #ifdef _WIN32
 #include <conio.h>
 #include <windows.h>
 #else
 #include <termios.h>
 #include <fcntl.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 #endif
+
+#define TELEMETRY_PORT 5555
 
 // 1. DEFINITIONS
 typedef enum {
@@ -37,6 +47,7 @@ int loop_counter = 0; // For simulating periodic load changes
 
 // Function Prototypes
 const char* getStateName(State s);
+const char* getStateToken(State s);
 void print_telemetry(SystemData *data);
 void update_telemetry(SystemData *data);
 void print_commands(void);
@@ -47,6 +58,20 @@ bool reset_fault(SystemData *data);
 bool release_estop(SystemData *data);
 int kbhit_check(void);
 char getch_char(void);
+void handle_command(char command, SystemData *data);
+
+#ifndef _WIN32
+bool telemetry_server_init(void);
+void telemetry_server_close(void);
+void telemetry_try_accept_client(void);
+void telemetry_poll_client_commands(SystemData *data);
+void telemetry_send_json(SystemData *data);
+#endif
+
+#ifndef _WIN32
+int telemetry_server_fd = -1;
+int telemetry_client_fd = -1;
+#endif
 
 // ==============================================
 // STATE TRANSITION FUNCTIONS
@@ -244,6 +269,17 @@ const char* getStateName(State s) {
     }
 }
 
+const char* getStateToken(State s) {
+    switch(s) {
+        case IDLE: return "IDLE";
+        case ARMED: return "ARMED";
+        case RUNNING: return "RUNNING";
+        case FAULT: return "FAULT";
+        case SHUTDOWN: return "SHUTDOWN";
+        default: return "UNKNOWN";
+    }
+}
+
 // Helper to display telemetry
 void print_telemetry(SystemData *data) {
     // Move cursor to home position (0,0) without clearing - eliminates flicker
@@ -315,6 +351,228 @@ char getch_char(void) {
     #endif
 }
 
+void handle_command(char command, SystemData *data) {
+    switch (command) {
+        case 'a':
+        case 'A':
+            arm();
+            break;
+
+        case 'd':
+        case 'D':
+            disarm();
+            break;
+
+        case 's':
+        case 'S':
+            if (current_state == ARMED) {
+                printf(">> Contactor Closed. DRILLING STARTED.\n");
+                current_state = RUNNING;
+            } else {
+                printf(">> Must be ARMED before starting.\n");
+            }
+            break;
+
+        case 'e':
+        case 'E':
+            data->e_stop_pressed = true;
+            fault();
+            break;
+
+        case 'u':
+        case 'U':
+            release_estop(data);
+            break;
+
+        case 'r':
+        case 'R':
+            reset_fault(data);
+            break;
+
+        case '+':
+        case '=':
+            if (current_state == RUNNING) {
+                data->target_rpm += 100;
+                if (data->target_rpm > 2000) data->target_rpm = 2000;
+                printf(">> Increasing target RPM to %.0f\n", data->target_rpm);
+            } else {
+                printf(">> Must be RUNNING to adjust RPM\n");
+            }
+            break;
+
+        case '-':
+        case '_':
+            if (current_state == RUNNING) {
+                data->target_rpm -= 100;
+                if (data->target_rpm < 500) data->target_rpm = 500;
+                printf(">> Decreasing target RPM to %.0f\n", data->target_rpm);
+            } else {
+                printf(">> Must be RUNNING to adjust RPM\n");
+            }
+            break;
+
+        case 't':
+        case 'T':
+            printf(">> Simulating overheat...\n");
+            data->temperature = 90.0;
+            break;
+
+        case 'x':
+        case 'X':
+            printf(">> Shutting down...\n");
+            current_state = SHUTDOWN;
+            break;
+
+        default:
+            break;
+    }
+}
+
+#ifndef _WIN32
+bool telemetry_server_init(void) {
+    struct sockaddr_in addr;
+    int opt = 1;
+
+    telemetry_server_fd = socket(AF_INET, SOCK_STREAM, 0);
+    if (telemetry_server_fd < 0) {
+        perror("socket");
+        return false;
+    }
+
+    if (setsockopt(telemetry_server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+        perror("setsockopt");
+        close(telemetry_server_fd);
+        telemetry_server_fd = -1;
+        return false;
+    }
+
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(TELEMETRY_PORT);
+    addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+
+    if (bind(telemetry_server_fd, (struct sockaddr*)&addr, sizeof(addr)) < 0) {
+        perror("bind");
+        close(telemetry_server_fd);
+        telemetry_server_fd = -1;
+        return false;
+    }
+
+    if (listen(telemetry_server_fd, 1) < 0) {
+        perror("listen");
+        close(telemetry_server_fd);
+        telemetry_server_fd = -1;
+        return false;
+    }
+
+    if (fcntl(telemetry_server_fd, F_SETFL, O_NONBLOCK) < 0) {
+        perror("fcntl");
+        close(telemetry_server_fd);
+        telemetry_server_fd = -1;
+        return false;
+    }
+
+    printf(">> Telemetry server listening on 127.0.0.1:%d\n", TELEMETRY_PORT);
+    return true;
+}
+
+void telemetry_server_close(void) {
+    if (telemetry_client_fd >= 0) {
+        close(telemetry_client_fd);
+        telemetry_client_fd = -1;
+    }
+    if (telemetry_server_fd >= 0) {
+        close(telemetry_server_fd);
+        telemetry_server_fd = -1;
+    }
+}
+
+void telemetry_try_accept_client(void) {
+    int client_fd;
+
+    if (telemetry_server_fd < 0 || telemetry_client_fd >= 0) {
+        return;
+    }
+
+    client_fd = accept(telemetry_server_fd, NULL, NULL);
+    if (client_fd < 0) {
+        return;
+    }
+
+    if (fcntl(client_fd, F_SETFL, O_NONBLOCK) < 0) {
+        close(client_fd);
+        return;
+    }
+
+    telemetry_client_fd = client_fd;
+    printf(">> GUI connected on localhost socket.\n");
+}
+
+void telemetry_poll_client_commands(SystemData *data) {
+    char buffer[64];
+    ssize_t bytes_read;
+    int i;
+
+    if (telemetry_client_fd < 0) {
+        return;
+    }
+
+    bytes_read = recv(telemetry_client_fd, buffer, sizeof(buffer), 0);
+    if (bytes_read > 0) {
+        for (i = 0; i < bytes_read; i++) {
+            char c = buffer[i];
+            if (c == '\n' || c == '\r') {
+                continue;
+            }
+            handle_command(c, data);
+        }
+        return;
+    }
+
+    if (bytes_read == 0) {
+        close(telemetry_client_fd);
+        telemetry_client_fd = -1;
+        printf(">> GUI disconnected.\n");
+        return;
+    }
+
+    if (errno != EAGAIN && errno != EWOULDBLOCK) {
+        close(telemetry_client_fd);
+        telemetry_client_fd = -1;
+        printf(">> GUI socket error, closing client connection.\n");
+    }
+}
+
+void telemetry_send_json(SystemData *data) {
+    char payload[320];
+    int len;
+    ssize_t sent;
+
+    if (telemetry_client_fd < 0) {
+        return;
+    }
+
+    len = snprintf(payload, sizeof(payload),
+                   "{\"state\":\"%s\",\"voltage\":%.3f,\"current\":%.3f,\"temperature\":%.3f,\"auger_rpm\":%.2f,\"target_rpm\":%.2f,\"load_factor\":%.3f,\"chainage\":%.3f,\"e_stop_pressed\":%d}\n",
+                   getStateToken(current_state),
+                   data->voltage,
+                   data->current,
+                   data->temperature,
+                   data->auger_rpm,
+                   data->target_rpm,
+                   data->load_factor,
+                   data->chainage,
+                   data->e_stop_pressed ? 1 : 0);
+
+    sent = send(telemetry_client_fd, payload, (size_t)len, 0);
+    if (sent < 0 && errno != EAGAIN && errno != EWOULDBLOCK) {
+        close(telemetry_client_fd);
+        telemetry_client_fd = -1;
+        printf(">> Failed to send telemetry, client disconnected.\n");
+    }
+}
+#endif
+
 // ==============================================
 // 2. MAIN LOOP (The "Brain")
 // ==============================================
@@ -329,6 +587,12 @@ int main() {
     #else
     sleep(2);
     #endif
+
+    #ifndef _WIN32
+    if (!telemetry_server_init()) {
+        printf(">> Warning: telemetry socket unavailable, continuing without GUI stream.\n");
+    }
+    #endif
     
     // Clear screen once at startup
     #ifdef _WIN32
@@ -339,6 +603,11 @@ int main() {
 
     // The Infinite Loop (Simulating the Teensy)
     while (current_state != SHUTDOWN) {
+
+        #ifndef _WIN32
+        telemetry_try_accept_client();
+        telemetry_poll_client_commands(&sensors);
+        #endif
         
         // A. UPDATE TELEMETRY BASED ON STATE
         update_telemetry(&sensors);
@@ -353,102 +622,30 @@ int main() {
         print_telemetry(&sensors);
         print_commands();
 
+        #ifndef _WIN32
+        telemetry_send_json(&sensors);
+        #endif
+
         // D. CHECK FOR USER INPUT (Non-blocking)
         if (kbhit_check()) {
             command = getch_char();
-            
+
             // E. STATE MACHINE LOGIC (Using transition functions)
-            switch (command) {
-                case 'a':
-                case 'A':
-                    arm();
-                    break;
-
-                case 'd':
-                case 'D':
-                    disarm();
-                    break;
-
-                case 's':
-                case 'S':
-                    if (current_state == ARMED) {
-                        printf(">> Contactor Closed. DRILLING STARTED.\n");
-                        current_state = RUNNING;
-                    } else {
-                        printf(">> Must be ARMED before starting.\n");
-                    }
-                    break;
-
-                case 'e':
-                case 'E':
-                    sensors.e_stop_pressed = true;
-                    fault();
-                    break;
-
-                case 'u':
-                case 'U':
-                    release_estop(&sensors);
-                    break;
-
-                case 'r':
-                case 'R':
-                    reset_fault(&sensors);
-                    break;
-
-                case '+':
-                case '=':
-                    if (current_state == RUNNING) {
-                        sensors.target_rpm += 100;
-                        if (sensors.target_rpm > 2000) sensors.target_rpm = 2000;
-                        printf(">> Increasing target RPM to %.0f\n", sensors.target_rpm);
-                    } else {
-                        printf(">> Must be RUNNING to adjust RPM\n");
-                    }
-                    break;
-
-                case '-':
-                case '_':
-                    if (current_state == RUNNING) {
-                        sensors.target_rpm -= 100;
-                        if (sensors.target_rpm < 500) sensors.target_rpm = 500;
-                        printf(">> Decreasing target RPM to %.0f\n", sensors.target_rpm);
-                    } else {
-                        printf(">> Must be RUNNING to adjust RPM\n");
-                    }
-                    break;
-
-                case 't':
-                case 'T':
-                    printf(">> Simulating overheat...\n");
-                    sensors.temperature = 90.0; // Force overheat
-                    break;
-
-                case 'x':
-                case 'X':
-                    printf(">> Shutting down...\n");
-                    current_state = SHUTDOWN;
-                    break;
-
-                default:
-                    // Ignore unknown commands in live mode
-                    break;
-            }
-            
-            // Small delay to show feedback message
-            #ifdef _WIN32
-            Sleep(1000);
-            #else
-            sleep(1);
-            #endif
+            handle_command(command, &sensors);
         }
         
         // F. Update rate (10 Hz = 100ms)
         #ifdef _WIN32
         Sleep(100);
         #else
-        usleep(100000);
+        struct timespec ts = {0, 100000000};
+        nanosleep(&ts, NULL);
         #endif
     }
+
+    #ifndef _WIN32
+    telemetry_server_close();
+    #endif
 
     printf("\n--- SYSTEM SHUTDOWN COMPLETE ---\n");
     return 0;
