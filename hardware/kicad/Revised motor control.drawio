@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="iK3O8WEUGK2Mq5axaYVP">
+    <mxGraphModel dx="614" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;J2&lt;/div&gt;&lt;div&gt;Motor out&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Conn 01x02" vertex="1">
+          <mxGeometry height="130" width="70" x="380" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pin 1:&amp;nbsp; +5V" vertex="1">
+          <mxGeometry height="20" width="70" x="310" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pin 2:&amp;nbsp; MOTOR_LOW" vertex="1">
+          <mxGeometry height="20" width="120" x="260" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;Q1&lt;/div&gt;&lt;div&gt;IRLZ44N&lt;/div&gt;Mosfet" vertex="1">
+          <mxGeometry height="80" width="80" x="150" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" value="Source" vertex="1">
+          <mxGeometry height="20" width="60" x="160" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GND" vertex="1">
+          <mxGeometry height="20" width="50" x="165" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-7" edge="1" parent="1" source="FMWDwMBzSF3vvLVOvH2Z-5" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="FMWDwMBzSF3vvLVOvH2Z-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="430" as="sourcePoint" />
+            <mxPoint x="130" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" value="Drain" vertex="1">
+          <mxGeometry height="20" width="60" x="160" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-9" edge="1" parent="1" source="FMWDwMBzSF3vvLVOvH2Z-3" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="FMWDwMBzSF3vvLVOvH2Z-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="390" />
+            </Array>
+            <mxPoint x="80" y="430" as="sourcePoint" />
+            <mxPoint x="130" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-10" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" value="+5V" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-11" edge="1" parent="1" source="FMWDwMBzSF3vvLVOvH2Z-10" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.375;exitY=1;exitDx=0;exitDy=0;" target="FMWDwMBzSF3vvLVOvH2Z-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="293" y="340" />
+            </Array>
+            <mxPoint x="230" y="430" as="sourcePoint" />
+            <mxPoint x="280" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" value="Gate" vertex="1">
+          <mxGeometry height="20" width="60" x="230" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FMWDwMBzSF3vvLVOvH2Z-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="240" as="sourcePoint" />
+            <mxPoint x="300" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMWDwMBzSF3vvLVOvH2Z-14" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" value="MOTOR_GATE" vertex="1">
+          <mxGeometry height="30" width="120" x="340" y="225" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
