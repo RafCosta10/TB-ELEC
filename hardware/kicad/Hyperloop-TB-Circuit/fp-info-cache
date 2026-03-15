@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-27226103714551486
-=======
-26717162457560464
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
+27250044718714091
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -5149,7 +5145,6 @@ C Rect series Radial pin pitch 5.00mm length 7mm width 6.5mm Capacitor
 2
 2
 Capacitor_THT
-<<<<<<< HEAD
 C_Rect_L7.2mm_W2.5mm_P5.00mm
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*2.5mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 2.5mm Capacitor R82
@@ -5157,8 +5152,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 2.5mm Capacitor R82
 2
 2
 Capacitor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 2.5mm Capacitor
@@ -5173,7 +5166,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 3.0mm Capacitor
 2
 2
 Capacitor_THT
-<<<<<<< HEAD
 C_Rect_L7.2mm_W3.5mm_P5.00mm
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*3.5mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 3.5mm Capacitor R82
@@ -5181,8 +5173,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 3.5mm Capacitor R82
 2
 2
 Capacitor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*3.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 3.5mm Capacitor
@@ -5190,7 +5180,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 3.5mm Capacitor
 2
 2
 Capacitor_THT
-<<<<<<< HEAD
 C_Rect_L7.2mm_W4.5mm_P5.00mm
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*4.5mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 4.5mm Capacitor R82
@@ -5198,8 +5187,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 4.5mm Capacitor R82
 2
 2
 Capacitor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 C_Rect_L7.2mm_W4.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*4.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 4.5mm Capacitor
@@ -5207,7 +5194,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 4.5mm Capacitor
 2
 2
 Capacitor_THT
-<<<<<<< HEAD
 C_Rect_L7.2mm_W5.0mm_P5.00mm
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*5.0mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 5.0mm Capacitor R82
@@ -5215,8 +5201,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 5.0mm Capacitor R82
 2
 2
 Capacitor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*5.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 5.5mm Capacitor
@@ -5224,7 +5208,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 5.5mm Capacitor
 2
 2
 Capacitor_THT
-<<<<<<< HEAD
 C_Rect_L7.2mm_W6.0mm_P5.00mm
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*6.0mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 6.0mm Capacitor R82
@@ -5239,8 +5222,6 @@ C Rect series Radial pin pitch 5.00mm length 7.2mm width 7.2mm Capacitor R82
 2
 2
 Capacitor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2
 C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*7.2mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm length 7.2mm width 7.2mm Capacitor
@@ -14963,7 +14944,6 @@ connector Hirose DF63 vertical
 0
 5
 5
-<<<<<<< HEAD
 Connector_Hirose
 Hirose_FX10A-96P-SV_2x48-1MP_P0.5mm
 0.5 mm pitch, stacking height 4 mm to 13 mm, 96 contacts, header, vertical, with guideposts (source: https://www.hirose.com/de/product/document?clcode=&productname=&series=FX10&documenttype=Catalog&lang=de&documentid=D31650_en)
@@ -15076,8 +15056,6 @@ conn board to board stacking receptacle
 0
 170
 169
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Connector_Hirose_DF40
 Hirose_DF40B(2.0)-12DS-0.4V_2x06-1MP_P0.4mm
 0.4mm Pitch, Stacking Height 2.000000mm, Receptacle, vertical (source: https://www.hirose.com/en/product/document?clcode=&productname=&series=DF40&documenttype=Catalog&lang=en&documentid=en_DF40_CAT)
@@ -27427,7 +27405,6 @@ PCIe
 164
 164
 Connector_PCBEdge
-<<<<<<< HEAD
 DEC_double_long
 DEC card edge connectors, http://www.bitsavers.org/pdf/dec/handbooks/Digital_Logic_Handbook_1975-76.pdf page 10 (24) (bottom view), http://www.bitsavers.org/pdf/dec/pdp8/pdp8e/PDP-8E_Engineering_Drawings_Dec72.pdf page 70 (bottom view)
 Connector PCBEdge DEC_double_long
@@ -27470,8 +27447,6 @@ Connector PCBEdge DEC_single_short
 38
 37
 Connector_PCBEdge
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 JAE_MM60-EZH039-Bx_BUS_PCI_Express_Holder
 PCI Express mini card latch for 3.9mm connector height, https://www.jae.com/direct/topics/topics_file_download/?topics_id=68909&ext_no=06&index=0&_lang=en&v=2022071912512930114109
 MiniPCI
@@ -27486,7 +27461,6 @@ MiniPCI
 6
 1
 Connector_PCBEdge
-<<<<<<< HEAD
 M.2_2230-xx-A
 M.2 card edge connector, https://web.archive.org/web/20210118201723/http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf
 Connector PCBEdge M.2_2230-xx-A
@@ -27592,8 +27566,6 @@ Connector PCBEdge M.2_22110-xx-M
 67
 67
 Connector_PCBEdge
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 SODIMM-200_1.8V_Card_edge
 SODIMM 200-pins edge connector, Jedec MO-224 Variation AB compliant (1.8V DDR2 SDRAM), 0.6mm pitch, https://www.jst-mfg.com/product/pdf/eng/eDM-200P.pdf
 sodimm
@@ -47333,7 +47305,6 @@ conn samtec board-to-board socket high-speed
 0
 100
 100
-<<<<<<< HEAD
 Connector_Samtec_EdgeRate
 Samtec_ERF8-005-XX.X-DV-L_2x05_P0.8mm_Socket_Latch
 0.80 mm Edge Rate Rugged High Speed Socket (source: https://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-footprint.pdf)
@@ -47754,8 +47725,6 @@ conn samtec edge-rate socket
 0
 200
 200
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Connector_Samtec_FSI
 Samtec_FSI-105-03-X-D-AD_2x05_P1.0mm_Socket_AlignmentPin
 Samtec FSI One-Piece Interface, 1.00 mm Pitch, Double Row, Alignment Pin (source: https://suddendocs.samtec.com/prints/fsi-1xx-03-x-d-x-xx-xx-footprint.pdf)
@@ -58349,13 +58318,8 @@ DCDC-Converter TRACO TEC2WI THT SIP-8 2W TMR2
 7
 Converter_DCDC
 Converter_DCDC_TRACO_TEC3-24xxUI_THT
-<<<<<<< HEAD
 DCDC-Converter, TRACO, TEC3-24xxUI, 3W, Rev. September 17. 2025, https://www.tracopower.com/products/tec3ui.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO THT SIP-8 3W TEC3UI TEC1UI TEC6 TEC6UI
-=======
-DCDC-Converter, TRACO, TEC3-24xxUI, 3W, Rev. July 31. 2024, https://www.tracopower.com/products/tec3ui.pdf, generated with kicad-footprint-generator StandardBox_generator.py
-DCDC-Converter TRACO TEC3UI THT SIP-8 3W
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 7
 7
@@ -58430,7 +58394,6 @@ DCDC-Converter TRACO TEN40WIRH THT 2"x1" 40W
 6
 6
 Converter_DCDC
-<<<<<<< HEAD
 Converter_DCDC_TRACO_TEP150-721xUIR_THT
 DCDC-Converter, TRACO, TEP150-721xUIR, 150W, Rev. September 4. 2025, https://www.tracopower.com/products/tep150uir.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO TEP150UIR THT Half-Brick 61x57.9 150W TEP200UIR
@@ -58438,8 +58401,6 @@ DCDC-Converter TRACO TEP150UIR THT Half-Brick 61x57.9 150W TEP200UIR
 15
 12
 Converter_DCDC
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Converter_DCDC_TRACO_TES1-051x_121x_241x_Single_SMD
 DCDC-Converter, TRACO, TES1-051x, TES1-121x, TES1-241x, Single, 1W, Rev. July 1. 2025, https://www.tracopower.com/products/tes1.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO TES1 SMD SMD8 1W
@@ -58476,13 +58437,8 @@ traco dcdc tht 15w
 9
 Converter_DCDC
 Converter_DCDC_TRACO_THL30-xxxxWI_THT
-<<<<<<< HEAD
 DCDC-Converter, TRACO, THL 30-xxxxWI, 30W, Rev. September 17. 2025, https://www.tracopower.com/products/thl30wi.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO THT 1"x1" 30W THL30WI THL25WI THL25 THL15WI
-=======
-DCDC-Converter, TRACO, THL 30-xxxxWI, 30W, Rev. September 11. 2025, https://www.tracopower.com/products/thl30wi.pdf, generated with kicad-footprint-generator StandardBox_generator.py
-DCDC-Converter TRACO THL30WI THT 1"x1" 30W
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 6
 6
@@ -58495,13 +58451,8 @@ DCDC-Converter TRACO THL40WI THT 1"x1" 40W
 6
 Converter_DCDC
 Converter_DCDC_TRACO_THN10-xxxxUIR_THT
-<<<<<<< HEAD
 DCDC-Converter, TRACO, THN 10-xxxxUIR, 10W, Rev. August 28. 2025, https://www.tracopower.com/products/thn10uir.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO THT 1"x1" 10W THN10UIR THN15UIR
-=======
-DCDC-Converter, TRACO, THN 10-xxxxUIR, 10W, Rev. July 3. 2025, https://www.tracopower.com/products/thn10uir.pdf, generated with kicad-footprint-generator StandardBox_generator.py
-DCDC-Converter TRACO THN10UIR THT 1"x1" 10W
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 7
 7
@@ -58583,15 +58534,9 @@ DCDC SMD TRACO TMR-1SM
 7
 7
 Converter_DCDC
-<<<<<<< HEAD
 Converter_DCDC_TRACO_TMR2-xxxxWI_THT
 DCDC-Converter, TRACO, TMR2-xxxxWI, 2W, Rev. October 7. 2025, https://www.tracopower.com/products/tmr2wi.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO THT SIP-9 2W TMR2WI
-=======
-Converter_DCDC_TRACO_TMR-2xxxxWI_THT
-https://www.tracopower.com/products/tmr2wi.pdf
-DCDC-Converter TRACO TMRxxxxWI Single/Dual_output
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 7
 7
@@ -58624,7 +58569,6 @@ DCDC-Converter TRACO TMU3 THT SIP-4 3W
 4
 4
 Converter_DCDC
-<<<<<<< HEAD
 Converter_DCDC_TRACO_TMV-051xD_121xD_Dual_THT
 DCDC-Converter, TRACO, TMV-051xD, TMV-121xD, Dual, 1W, Rev. October 28. 2025, https://www.tracopower.com/products/tmv.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO THT SIP-7 1W TMV
@@ -58653,8 +58597,6 @@ DCDC-Converter TRACO THT SIP-7 1W TMV
 4
 4
 Converter_DCDC
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Converter_DCDC_TRACO_TOS06-05SIL_THT
 DCDC-Converter, TRACO, TOS06-05SIL, 6A, Rev. March 20. 2024, https://www.tracopower.com/products/tos06sil.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter POL TRACO TOS06SIL 2.54MM THT SIP-9 6A
@@ -58676,7 +58618,6 @@ DCDC-Converter TRACO TRA3 THT SIP-7 3W
 4
 4
 Converter_DCDC
-<<<<<<< HEAD
 Converter_DCDC_TRACO_TRI1-xxxxSM_SMD
 DCDC-Converter, TRACO, TRI1-xxxxSM, 1W, Rev. August 27. 2025, https://www.tracopower.com/products/tri1sm.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO TRI1SM SMD SMD14 1W
@@ -58684,8 +58625,6 @@ DCDC-Converter TRACO TRI1SM SMD SMD14 1W
 6
 6
 Converter_DCDC
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Converter_DCDC_TRACO_TRI1-xxxx_THT
 DCDC-Converter, TRACO, TRI1-xxxx, 1W, Rev. November 13. 2023, https://www.tracopower.com/products/tri1.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter TRACO TRI1 THT SIP-7 1W
@@ -58728,7 +58667,6 @@ DCDC-Converter TRACO TSR-1
 3
 3
 Converter_DCDC
-<<<<<<< HEAD
 Converter_DCDC_TRACO_TSR0.5-24xxSM_241xxSM_SMD
 DCDC-Converter, TRACO, TSR0.5-24xxSM, TSR0.5-241xxSM, 0.5A, Rev. November 12. 2025, https://www.tracopower.com/products/tsr0.5sm.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter SWITCHING-REGULATOR STEP-DOWN TRACO TSR0.5SM SMD SMD10 0.5A
@@ -58736,8 +58674,6 @@ DCDC-Converter SWITCHING-REGULATOR STEP-DOWN TRACO TSR0.5SM SMD SMD10 0.5A
 10
 10
 Converter_DCDC
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT
 DCDC-Converter, TRACO, TSR0.5-24xx, TSR0.5-24xxx, 0.5A, Rev. February 11. 2025, https://www.tracopower.com/products/tsr0.5.pdf, generated with kicad-footprint-generator StandardBox_generator.py
 DCDC-Converter SWITCHING-REGULATOR STEP-DOWN TRACO TSR0.5 2.54MM THT SIP-3 0.5A
@@ -60012,7 +59948,6 @@ SMD SMT crystal
 2
 2
 Crystal
-<<<<<<< HEAD
 Crystal_SMD_WE_12SMX-4Pin_7.0x5.0mm
 Wurth Elektronik, Crystal SMD SMT, 7.0x5.0mm package, SMD, generated with kicad-footprint-generator make_crystal.py, https://www.we-online.com/en/components/products/WE-XTAL#/articles/WE-XTAL-12SMX
 
@@ -60062,8 +59997,6 @@ Wurth Elektronik, Crystal SMD SMT, 1.2x1.0mm package, SMD, generated with kicad-
 4
 4
 Crystal
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Resonator-2Pin_W6.0mm_H3.0mm
 Ceramic Resonator/Filter, length 3.0mm, width 6.0mm, 2 pins
 ceramic
@@ -60457,25 +60390,15 @@ Diode MicroSMP (DO-219AD)
 2
 Diode_SMD
 D_MiniMELF
-<<<<<<< HEAD
 Diode Mini-MELF (SOD-80, LL-34)
 LL34
-=======
-Diode Mini-MELF (SOD-80)
-Diode Mini-MELF (SOD-80)
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Diode_SMD
 D_MiniMELF_Handsoldering
-<<<<<<< HEAD
 Diode Mini-MELF (SOD-80, LL-34) Handsoldering
 LL34
-=======
-Diode Mini-MELF (SOD-80) Handsoldering
-Diode Mini-MELF (SOD-80) Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
@@ -62488,23 +62411,6 @@ emi filter
 0
 5
 5
-<<<<<<< HEAD
-Footprint Library
-CONV_SDM30-24S5
-
-
-0
-6
-6
-Footprint Library
-IFX-PG-TO220-3-904-1
-TO,flange mount,2.54 mm pitch, 3 pin, 10.16 mm L X 4.57 mm W X 20.56 mm H body
-
-0
-3
-3
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Fuse
 FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165
 Littelfuse fuse holder for ATO/FKS blade fuses, 80V, vertical, 20 x 6mm, PCB thickness up to 1.5mm, http://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/ato/littelfuse-fuse-holder-ato-flr-pcb-datasheet.pdf
@@ -63689,16 +63595,6 @@ inductor handsolder
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
-=======
-L_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
-inductor handsolder
-0
-2
-2
-Inductor_SMD
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_01005_0402Metric
 Inductor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator
 inductor
@@ -63741,16 +63637,6 @@ inductor handsolder
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
-=======
-L_1206_3216Metric_Pad1.42x1.75mm_HandSolder
-Inductor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-inductor handsolder
-0
-2
-2
-Inductor_SMD
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_1210_3225Metric
 Inductor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
 inductor
@@ -65158,7 +65044,6 @@ bmrx mchi
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
 L_Chilisin_BWVS00322515
 Inductor, Chilisin, BWVS00322515, 2.5x3.2x1.5mm, (https://www.chilisin.com/upload/media/product/power/file/BWVS_Series.pdf), generated with kicad-footprint-generator gen_inductor.py
 bwvs
@@ -65236,8 +65121,6 @@ bwvs
 2
 2
 Inductor_SMD
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_Coilcraft_0403HQ_1008Metric
 Inductor, Coilcraft, 0403HQ_1008Metric, 1.19x0.86x0.71mm, (https://www.coilcraft.com/getmedia/69c5aa91-3ca0-4922-874d-581cd4e27e62/0403hq.pdf), generated with kicad-footprint-generator gen_inductor.py
 hq
@@ -65987,7 +65870,6 @@ L Coilcraft XxL4040
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
 L_CommonModeChoke_Bourns_SRF1260
 Bourns  common-mode choke, 4 Pin (https://www.bourns.com/docs/Product-Datasheets/SRF1260.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 Bourns common-mode choke NoLead
@@ -66044,8 +65926,6 @@ Coilank common-mode choke NoLead
 4
 4
 Inductor_SMD
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_CommonModeChoke_Coilcraft_0603USB
 Coilcraft 0603USB Series Common Mode Choke, https://www.coilcraft.com/pdfs/0603usb.pdf
 surface mount common mode bead
@@ -66075,43 +65955,27 @@ inductor common mode choke
 4
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM2520-2P
-<<<<<<< HEAD
 TDK  common-mode choke, 4 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 TDK common-mode choke NoLead
-=======
-TDK ACM2520 common-mode filter, SMD, 2x2.5mm, height 1.2mm https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf
-ACM2520 common-mode filter 4 pin
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 4
 4
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM2520-3P
-<<<<<<< HEAD
 TDK  common-mode choke, 6 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 TDK common-mode choke NoLead
-=======
-TDK ACM2520 common-mode filter, SMD, 2x2.5mm, height 1.2mm https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_signal_acm2520_en.pdf
-ACM2520 common-mode filter 6 pin
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 6
 6
 Inductor_SMD
 L_CommonModeChoke_TDK_ACM7060
-<<<<<<< HEAD
 TDK  common-mode choke, 4 Pin (https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_power_acm7060_en.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 TDK common-mode choke NoLead
-=======
-ACM7060 SMT Common Mode Filter, https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/cmf_commercial_power_acm7060_en.pdf
-SMT Common Mode Line Filter
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 4
 4
 Inductor_SMD
 L_CommonModeChoke_Wuerth_WE-SL5
-<<<<<<< HEAD
 WE-SL5 SMT Common Mode Line Filter, 10x8.7mm, height 6.5mm, https://www.we-online.com/components/products/datasheet/744272121.pdf
 SMT Common Mode Line Filter
 0
@@ -66119,15 +65983,12 @@ SMT Common Mode Line Filter
 4
 Inductor_SMD
 L_CommonModeChoke_Wuerth_WE-SL5-HC
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 WE-SL5 SMT Common Mode Line Filter, 9.5x8.3mm, height 5mm, https://www.we-online.com/components/products/datasheet/744273222.pdf
 SMT Common Mode Line Filter
 0
 4
 4
 Inductor_SMD
-<<<<<<< HEAD
 L_CommonModeChoke_XR_XRGM0905C
 XR XRGM0905C SO, 4 Pin (https://www.lcsc.com/datasheet/C42418174.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 XR SO Inductor_SMD
@@ -66135,8 +65996,6 @@ XR SO Inductor_SMD
 4
 4
 Inductor_SMD
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_CommonMode_Bourns_DR331
 Bourns DR331 SO, 4 Pin (https://bourns.com/docs/product-datasheets/dr331.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 Bourns SO Inductor_SMD
@@ -66543,7 +66402,6 @@ Neosid Inductor SMs95 Fixed inductor SMD magnetically shielded
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
 L_Panasonic_PCC-M0530M
 Inductor, Panasonic, PCC-M0530M, 5.5x5.0x3.0mm, (https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf), generated with kicad-footprint-generator gen_inductor.py
 ferrite power automotive ETQPxM
@@ -66635,8 +66493,6 @@ ferrite power automotive ETQPxM
 2
 2
 Inductor_SMD
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_Pulse_P059x
 1:1, Power Inductor, https://productfinder.pulseelectronics.com/api/open/product-attachments/datasheet/p0599nl
 inductor coil choke
@@ -67835,43 +67691,27 @@ SMD Vishay Inductor Low Profile
 2
 Inductor_SMD
 L_Vishay_IHLP-1212
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-1212, 3.0x3.0x2.0mm, (https://www.vishay.com/docs/34289/lp12bz11.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 3.0mmx3.0mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-1616
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-1616, 4.06x4.06x2.0mm, (https://www.vishay.com/docs/34196/lp16bz11.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 4.1mmx4.1mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-2020
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-2020, 5.18x5.18x3.0mm, (https://www.vishay.com/docs/34280/ihlp-2020cz-01.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 5.1mmx5.1mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-2525
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-2525, 6.47x6.47x3.0mm, (https://www.vishay.com/docs/34104/ihlp-2525cz-01.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
 0
@@ -67881,46 +67721,27 @@ Inductor_SMD
 L_Vishay_IHLP-3232
 Inductor, Vishay, IHLP-3232, 8.18x8.18x4.0mm, (https://www.vishay.com/docs/34313/ihlp3232dz-11.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 6.3mmx6.3mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-4040
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-4040, 10.3x10.3x5.4mm, (https://www.vishay.com/docs/34499/ihlp4040ed5a.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 10.2mmx10.2mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-5050
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-5050, 12.9x12.9x6.4mm, (https://www.vishay.com/docs/34123/ihlp-5050fd-01.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 12.7mmx12.7mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Vishay_IHLP-6767
-<<<<<<< HEAD
 Inductor, Vishay, IHLP-6767, 17.15x17.15x7.0mm, (https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf), generated with kicad-footprint-generator gen_inductor.py
 shielded SMT
-=======
-Inductor, Vishay, IHLP series, 17.0mmx17.0mm
-inductor vishay ihlp smd
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
@@ -68149,7 +67970,6 @@ shielded Würth SMT
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
 L_Wuerth_LQFS-3818
 Inductor, Wuerth, LQFS-3818, 3.8x3.8x1.8mm, (https://www.we-online.com/components/products/datasheet/74406032010.pdf), generated with kicad-footprint-generator gen_inductor.py
 Würth SMT
@@ -68174,150 +67994,96 @@ Inductor_SMD
 L_Wuerth_MAPI-1610
 Inductor, Wuerth, MAPI-1610, 1.6x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
 Würth SMT
-=======
-L_Wuerth_MAPI-1610
-Inductor, Wuerth, MAPI-1610, 1.6x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2010
 Inductor, Wuerth, MAPI-2010, 2.0x1.6x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2506
 Inductor, Wuerth, MAPI-2506, 2.5x2.0x0.6mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2508
 Inductor, Wuerth, MAPI-2508, 2.5x2.0x0.8mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2510
 Inductor, Wuerth, MAPI-2510, 2.5x2.0x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-2512
 Inductor, Wuerth, MAPI-2512, 2.5x2.0x1.2mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3010
 Inductor, Wuerth, MAPI-3010, 3.0x3.0x1.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3012
 Inductor, Wuerth, MAPI-3012, 3.0x3.0x1.2mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3015
 Inductor, Wuerth, MAPI-3015, 3.0x3.0x1.5mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-3020
 Inductor, Wuerth, MAPI-3020, 3.0x3.0x2.0mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-4020
 Inductor, Wuerth, MAPI-4020, 4.1x4.1x2.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-4030
 Inductor, Wuerth, MAPI-4030, 4.1x4.1x3.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-5020
 Inductor, Wuerth, MAPI-5020, 5.4x5.4x2.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
 Inductor_SMD
 L_Wuerth_MAPI-5030
 Inductor, Wuerth, MAPI-5030, 5.4x5.4x3.1mm, (https://www.we-online.com/en/components/products/WE-MAPI?kicad), generated with kicad-footprint-generator gen_inductor.py
-<<<<<<< HEAD
 Würth SMT
 0
 2
@@ -68424,9 +68190,6 @@ Inductor_SMD
 L_Wuerth_PMFI-353220
 Inductor, Wuerth, PMFI-353220, 3.5x3.2x2.0mm, (https://www.we-online.com/components/products/datasheet/74479335329110.pdf), generated with kicad-footprint-generator gen_inductor.py
 Würth SMT
-=======
-Würth -SMT
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
@@ -68536,7 +68299,6 @@ wurth wuerth smd inductor
 2
 2
 Inductor_SMD
-<<<<<<< HEAD
 L_Wuerth_XHMI-6060
 Inductor, Wuerth, XHMI-6060, 6.65x6.45x5.8mm, (https://www.we-online.com/components/products/datasheet/74439346068.pdf), generated with kicad-footprint-generator gen_inductor.py
 Würth SMT
@@ -68547,11 +68309,6 @@ Inductor_SMD
 L_Wuerth_XHMI-8080
 Inductor, Wuerth, XHMI-8080, 8.8x8.3x7.8mm, (https://www.we-online.com/components/products/datasheet/74439358068.pdf), generated with kicad-footprint-generator gen_inductor.py
 Würth SMT
-=======
-L_Wuerth_WE-XHMI-8080
-Inductor, Wuerth, WE-XHMI 8080, 8.3mmx8.8mm, https://katalog.we-online.de/pbs/datasheet/74439358068.pdf, generated with kicad-footprint-generator StandardBox_generator.py
-Inductor Wuerth WE-XHMI 8080
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 2
 2
@@ -69368,7 +69125,6 @@ common mode filter quadruple choke
 8
 8
 Inductor_THT
-<<<<<<< HEAD
 L_CommonMode_Toroid_Vertical_L13.0mm_W7.5mm_Px6.00mm_Py5.00mm_PRODTech_PDMCAT1065
 L_CommonMode_Toroid, Vertical series, Radial, pin pitch=6.00*5.00mm^2, length*width=13*7.5mm^2, PRODTech, PDMCAT1065, https://www.lcsc.com/datasheet/C5158821.pdf
 L_CommonMode_Toroid Vertical series Radial pin pitch 6.00*5.00mm^2  length 13mm width 7.5mm PRODTech PDMCAT1065
@@ -69376,8 +69132,6 @@ L_CommonMode_Toroid Vertical series Radial pin pitch 6.00*5.00mm^2  length 13mm 
 4
 4
 Inductor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_CommonMode_Toroid_Vertical_L19.3mm_W10.8mm_Px6.35mm_Py15.24mm_Bourns_8100
 L_CommonMode_Toroid, Vertical series, Radial, pin pitch=6.35*15.24mm^2, length*width=19.304*10.795mm^2, Bourns, 8100, http://datasheet.octopart.com/8120-RC-Bourns-datasheet-10228452.pdf
 L_CommonMode_Toroid Vertical series Radial pin pitch 6.35*15.24mm^2  length 19.304mm width 10.795mm Bourns 8100
@@ -69392,7 +69146,6 @@ L_CommonMode_Toroid Vertical series Radial pin pitch 5.08*12.70mm^2  length 21mm
 4
 4
 Inductor_THT
-<<<<<<< HEAD
 L_CommonMode_Toroid_Vertical_L22.0mm_W12.0mm_Px9.00mm_Py8.00mm_PRODTech_PDMCAT18107-102ML
 L_CommonMode_Toroid, Vertical series, Radial, pin pitch=9.00*8.00mm^2, length*width=22*12mm^2, PRODTech, PDMCAT18107-102ML, https://www.lcsc.com/datasheet/C2831472.pdf
 L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm width 12mm PRODTech PDMCAT18107-102ML
@@ -69428,8 +69181,6 @@ L_CommonMode_Toroid Vertical series Radial pin pitch 9.00*8.00mm^2  length 22mm 
 4
 4
 Inductor_THT
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 L_CommonMode_Toroid_Vertical_L24.0mm_W16.3mm_Px10.16mm_Py20.32mm_Murata_5200
 L_CommonMode_Toroid, Vertical series, Radial, pin pitch=10.16*20.32mm^2, length*width=24*16.3mm^2, Murata, 5200, http://www.murata-ps.com/data/magnetics/kmp_5200.pdf
 L_CommonMode_Toroid Vertical series Radial pin pitch 10.16*20.32mm^2  length 24mm width 16.3mm Murata 5200
@@ -76269,7 +76020,6 @@ BGA 24 1.0
 24
 24
 Package_BGA
-<<<<<<< HEAD
 BGA-24_8x8mm_Layout5x5_P1.0mm
 BGA-24, 8x8mm, 24 Ball, 5x5 Layout, 1.0mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.infineon.com/assets/row/public/packages/73/package_outline_download/infineon-pg-bga-24-804-spo-pdf-package-en.pdf
 BGA 24 1.0
@@ -76277,8 +76027,6 @@ BGA 24 1.0
 24
 24
 Package_BGA
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 BGA-25_6.35x6.35mm_Layout5x5_P1.27mm
 BGA-25, https://www.analog.com/media/en/technical-documentation/data-sheets/ltm4624.pdf
 BGA-25 uModule
@@ -76302,11 +76050,7 @@ BGA-48
 Package_BGA
 BGA-63_9x11mm_Layout10x12_P0.8mm
 BGA-63, 9.0x11.0mm, 63 Ball, 10x12 Layout, 0.8mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-207N.pdf
-<<<<<<< HEAD
 BGA 63 0.8 JEDEC MO-207N DH-z
-=======
-BGA 63 0.8
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 63
 63
@@ -76362,22 +76106,14 @@ BGA-100
 Package_BGA
 BGA-100_12x18mm_Layout10x17_P1mm
 BGA-100, 12x18mm, 100 Ball, 10x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-<<<<<<< HEAD
 BGA 100 1 JEDEC MO-304D P18.0x12.0-EJ-100A
-=======
-BGA 100 1
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 100
 100
 Package_BGA
 BGA-100_14x18mm_Layout10x17_P1mm
 BGA-100, 14x18mm, 100 Ball, 10x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-<<<<<<< HEAD
 BGA 100 1 JEDEC MO-304D P18.0x14.0-EJ-100A
-=======
-BGA 100 1
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 100
 100
@@ -76398,11 +76134,7 @@ BGA-132
 Package_BGA
 BGA-132_12x18mm_Layout11x17_P1mm
 BGA-132, 12x18mm, 132 Ball, 11x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-<<<<<<< HEAD
 BGA 132 1 JEDEC MO-304D P18.0x12.0-EJ-132B
-=======
-BGA 132 1
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 132
 132
@@ -76430,11 +76162,7 @@ VBGA-152
 Package_BGA
 BGA-152_14x18mm_Layout13x17_P1mm
 BGA-152, 14x18mm, 152 Ball, 13x17 Layout, 1mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.jedec.org/system/files/docs/MO-304D.pdf
-<<<<<<< HEAD
 BGA 152 1 JEDEC MO-304D P18.0x14.0-EJ-152D
-=======
-BGA 152 1
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 152
 152
@@ -77328,7 +77056,6 @@ BGA 12 0.5 R-XBGA-N12
 24
 12
 Package_BGA
-<<<<<<< HEAD
 Texas_DSBGA-12_2.11x1.61mm_Layout4x3_P0.5mm
 Texas Instruments, YZG (R-XBGA-N12) package, 0.275 .. 0.475mm body thickness, NSMD, 2.11x1.61mm, 12 Ball, 4x3 Layout, 0.5mm Pitch, generated with kicad-footprint-generator ipc_bga_generator.py, https://www.ti.com/lit/ds/symlink/tsc2007.pdf#page=34, https://www.ti.com/lit/ml/mxbg028d/mxbg028d.pdf
 BGA 12 0.5 UFBGA-12_2.11x1.61mm_Layout4x3_P0.5mm Die-Size-Ball-Grid-Array
@@ -77336,8 +77063,6 @@ BGA 12 0.5 UFBGA-12_2.11x1.61mm_Layout4x3_P0.5mm Die-Size-Ball-Grid-Array
 12
 12
 Package_BGA
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Texas_DSBGA-16_2.39x2.39mm_Layout4x4_P0.5mm
 Texas Instruments, DSBGA, area grid, YZF, YZF0016, 2.39x2.39mm, 16 Ball, 4x4 Layout, 0.5mm Pitch, https://www.ti.com/lit/ds/symlink/dac80508.pdf
 BGA 16 0.5
@@ -77871,44 +77596,28 @@ LFCSP 8 0.5
 5
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm
-<<<<<<< HEAD
 Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Analog LFCSP NoLead
 0
 21
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm_ThermalVias
-<<<<<<< HEAD
 Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_23.pdf, CP-16-23), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Analog LFCSP NoLead
 0
 31
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.35x2.35mm
-<<<<<<< HEAD
 Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Analog LFCSP NoLead
 0
 21
 17
 Package_CSP
 Analog_LFCSP-16-1EP_4x4mm_P0.65mm_EP2.35x2.35mm_ThermalVias
-<<<<<<< HEAD
 Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-16/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Analog  LFCSP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_16_20.pdf, CP-16-20), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Analog LFCSP NoLead
 0
 31
@@ -77957,11 +77666,7 @@ CSP 80 0.4 80-ball WLCSP
 80
 Package_CSP
 LFCSP-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
-<<<<<<< HEAD
 LFCSP, 6 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-6/cp_6_3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-LFCSP, 6 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_6_3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LFCSP NoLead
 0
 11
@@ -78157,22 +77862,14 @@ LFCSP NoLead
 25
 Package_CSP
 LFCSP-24-1EP_4x4mm_P0.5mm_EP2.3x2.3mm
-<<<<<<< HEAD
 LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-24/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LFCSP NoLead
 0
 29
 25
 Package_CSP
 LFCSP-24-1EP_4x4mm_P0.5mm_EP2.3x2.3mm_ThermalVias
-<<<<<<< HEAD
 LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp-24/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-LFCSP, 24 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_24_14.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LFCSP NoLead
 0
 39
@@ -79480,7 +79177,6 @@ DFN 0.5
 13
 9
 Package_DFN_QFN
-<<<<<<< HEAD
 DFN-8-1EP_3x3mm_P0.65mm_EP1.2x2.15mm
 DFN, 8 Pin (https://www.lcsc.com/datasheet/C5382538.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead SIT1057TK3 SIT-HVSON8
@@ -79495,8 +79191,6 @@ DFN NoLead SIT1057TK3 SIT-HVSON8
 20
 9
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DFN-8-1EP_3x3mm_P0.65mm_EP1.5x2.25mm
 DFN, 8 Pin (https://www.diodes.com/assets/Package-Files/U-DFN3030-8-Type-E.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
@@ -79504,7 +79198,6 @@ DFN NoLead
 13
 9
 Package_DFN_QFN
-<<<<<<< HEAD
 DFN-8-1EP_3x3mm_P0.65mm_EP1.6x2.56mm
 DFN, 8 Pin (https://e.chipanalog.com/Public/Uploads/uploadfile/files/20250106/CS485xxdatasheetVersion1.03en20240429.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead Chipanalog-DFN8-D
@@ -79519,8 +79212,6 @@ DFN NoLead Chipanalog-DFN8-D
 20
 9
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.05mm
 DFN, 8 Pin (http://www.ixysic.com/home/pdfs.nsf/www/IX4426-27-28.pdf/$file/IX4426-27-28.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
@@ -79599,11 +79290,7 @@ DFN 0.5
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.7x2.5mm
-<<<<<<< HEAD
 DFN, 10 Pin (https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPQ2483/document_id/2064/), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-DFN, 10 Pin (https://www.monolithicpower.com/pub/media/document/MPQ2483_r1.05.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DFN NoLead
 0
 15
@@ -79631,22 +79318,14 @@ DFN NoLead
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm
-<<<<<<< HEAD
 DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/lt3471.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DFN NoLead
 0
 15
 11
 Package_DFN_QFN
 DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm_ThermalVias
-<<<<<<< HEAD
 DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/lt3471.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-DFN, 10 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf#page=15), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DFN NoLead
 0
 22
@@ -79869,7 +79548,6 @@ DHVQFN NoLead
 16
 15
 Package_DFN_QFN
-<<<<<<< HEAD
 DHVQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm_ThermalVias
 DHVQFN, 14 Pin (JEDEC MO-241/VAA, https://assets.nexperia.com/documents/package-information/SOT762-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DHVQFN NoLead
@@ -79877,8 +79555,6 @@ DHVQFN NoLead
 19
 15
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm
 DHVQFN, 16 Pin (JEDEC MO-241/VAB, https://assets.nexperia.com/documents/package-information/SOT763-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 DHVQFN NoLead Nexperia_SOT763-1 Texas_BQB0016A
@@ -79893,7 +79569,6 @@ DHVQFN NoLead
 23
 21
 Package_DFN_QFN
-<<<<<<< HEAD
 DHWQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm
 DHWQFN, 14 Pin (JEDEC MO-241 variation WAA, https://www.ti.com/lit/ml/qfnd686/qfnd686.pdf, https://www.ti.com/lit/ds/symlink/txb0104.pdf#page=43), generated with kicad-footprint-generator ipc_noLead_generator.py
 DHWQFN NoLead Texas_BQA0014A
@@ -79908,8 +79583,6 @@ DHWQFN NoLead Texas_BQA0014A
 19
 15
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Diodes_DFN1006-3
 DFN package size 1006 3 pins
 DFN package size 1006 3 pins
@@ -79917,15 +79590,9 @@ DFN package size 1006 3 pins
 3
 3
 Package_DFN_QFN
-<<<<<<< HEAD
 Diodes_UDFN-10_1x2.5mm_P0.5mm
 Diodes  UDFN, 10 Pin (https://www.diodes.com/assets/Package-Files/U-DFN2510-10-Type-CJ.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 Diodes UDFN NoLead Diodes_CJ Diodes_U-DFN2510-10
-=======
-Diodes_UDFN-10_1.0x2.5mm_P0.5mm
-U-DFN2510-10 package used by Diodes Incorporated (https://www.diodes.com/assets/Package-Files/U-DFN2510-10-Type-CJ.pdf)
-UDFN-10 U-DFN2510-10 Diodes
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 10
 10
@@ -80014,7 +79681,6 @@ HVQFN NoLead
 59
 33
 Package_DFN_QFN
-<<<<<<< HEAD
 HVQFN-36-1EP_6x6mm_P0.5mm_EP3.9x3.9mm
 HVQFN, 36 Pin (https://www.nxp.com.cn/docs/en/package-information/SOT1092-2.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 HVQFN NoLead NXP_SOT1092-2
@@ -80029,8 +79695,6 @@ HVQFN NoLead NXP_SOT1092-2
 63
 37
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 HVQFN-40-1EP_6x6mm_P0.5mm_EP4.1x4.1mm
 HVQFN, 40 Pin (https://www.nxp.com/docs/en/package-information/SOT618-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 HVQFN NoLead
@@ -80220,7 +79884,6 @@ Maxim TDFN NoLead
 11
 7
 Package_DFN_QFN
-<<<<<<< HEAD
 Maxim_TDFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm
 Maxim  TDFN, 10 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/tqfn/21-0137.pdf and https://www.analog.com/media/en/package-pcb-resources/land-pattern/tdfn-ep/90-0003.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 Maxim TDFN NoLead T1033-2 MO229/WEED-3
@@ -80228,8 +79891,6 @@ Maxim TDFN NoLead T1033-2 MO229/WEED-3
 15
 11
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Maxim_TDFN-12-1EP_3x3mm_P0.5mm_EP1.7x2.5mm
 Maxim TDFN, 12 Pin (https://www.analog.com/media/en/package-pcb-resources/land-pattern/tdfn/90-0397.pdf)
 DFN NoLead
@@ -80861,22 +80522,14 @@ QFN NoLead
 25
 Package_DFN_QFN
 QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
-<<<<<<< HEAD
 QFN, 24 Pin (https://www.alldatasheet.com/datasheet-pdf/pdf/1159021/ALFA/AS3330.html), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 24 Pin (http://www.alfarzpp.lv/eng/sc/AS3330.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 29
 25
 Package_DFN_QFN
 QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias
-<<<<<<< HEAD
 QFN, 24 Pin (https://www.alldatasheet.com/datasheet-pdf/pdf/1159021/ALFA/AS3330.html), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 24 Pin (http://www.alfarzpp.lv/eng/sc/AS3330.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 39
@@ -81170,22 +80823,14 @@ QFN NoLead
 29
 Package_DFN_QFN
 QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm
-<<<<<<< HEAD
 QFN, 28 Pin (https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001NCE/v_VBhk1IolDgxwwnOpcS_vTFxPfSEPQbuneK3mWsXlU page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 28 Pin (https://www.semtech.com/uploads/documents/sx1272.pdf#page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 38
 29
 Package_DFN_QFN
 QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm_ThermalVias
-<<<<<<< HEAD
 QFN, 28 Pin (https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001NCE/v_VBhk1IolDgxwwnOpcS_vTFxPfSEPQbuneK3mWsXlU page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 28 Pin (https://www.semtech.com/uploads/documents/sx1272.pdf#page=125), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 55
@@ -81759,22 +81404,14 @@ QFN NoLead
 53
 Package_DFN_QFN
 QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm
-<<<<<<< HEAD
 QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=607), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=634), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 61
 57
 Package_DFN_QFN
 QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias
-<<<<<<< HEAD
 QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=607), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=634), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 QFN NoLead
 0
 66
@@ -82215,22 +81852,14 @@ DFN 0.5 Qorvo 2x2mm
 9
 Package_DFN_QFN
 Qorvo_TQFN66-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm
-<<<<<<< HEAD
 Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006805), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006847), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Qorvo TQFN66 NoLead
 0
 58
 49
 Package_DFN_QFN
 Qorvo_TQFN66-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm_ThermalVias
-<<<<<<< HEAD
 Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006805), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-Qorvo  TQFN66, 48 Pin (https://www.qorvo.com/products/d/da006847), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Qorvo TQFN66 NoLead
 0
 75
@@ -82257,7 +81886,6 @@ Renesas UQFN NoLead
 20
 20
 Package_DFN_QFN
-<<<<<<< HEAD
 ST_DFN-10-1EP_3x3mm_P0.5mm_EP0.62x0.98mm
 ST  DFN, 10 Pin (https://www.st.com/resource/en/datasheet/l7983.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 ST DFN NoLead
@@ -82272,8 +81900,6 @@ ST DFN NoLead
 15
 11
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 ST_UFDFPN-12-1EP_3x3mm_P0.5mm_EP1.4x2.55mm
 ST  UFDFPN, 12 Pin (https://www.st.com/resource/en/datasheet/st25dv04k.pdf#page=152), generated with kicad-footprint-generator ipc_noLead_generator.py
 ST UFDFPN NoLead
@@ -82765,11 +82391,7 @@ ti qfm mof0009a
 9
 Package_DFN_QFN
 Texas_PicoStar_DFN-3_0.69x0.60mm
-<<<<<<< HEAD
 Texas PicoStar YJM0003A DFN-3, 0.73x0.64mm max, 0.69x0.60mm nom, https://www.ti.com/lit/ml/mxlg032a/mxlg032a.pdf
-=======
-Texas Picostar DFN-3, 0.73x0.64mm max, 0.69x0.60mm nom, https://www.ti.com/lit/ds/symlink/csd13380f3.pdf
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 TI YJM0003A
 0
 5
@@ -82803,7 +82425,6 @@ RDX0007A QFN FCMOD DC/DC
 7
 7
 Package_DFN_QFN
-<<<<<<< HEAD
 Texas_REE0036A_WQFN-36-1EP_4x5mm_P0.4mm_EP2.7x3.7mm
 Texas REE0036A WQFN, 36 Pin (https://www.ti.com/lit/ds/symlink/drv8317.pdf#page=66), generated with kicad-footprint-generator ipc_noLead_generator.py
 Texas WQFN NoLead
@@ -82818,8 +82439,6 @@ Texas WQFN NoLead
 56
 37
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Texas_REF0038A_WQFN-38-2EP_6x4mm_P0.4
 Texas REF0038A WQFN, 38 Pin, 2EP (https://www.ti.com/lit/ds/symlink/tps25730.pdf#page=68)
 Texas Instruments WQFN NoLead
@@ -83177,7 +82796,6 @@ Texas WQFN NoLead
 60
 41
 Package_DFN_QFN
-<<<<<<< HEAD
 Texas_RNX0012C_VQFN-14-11-1EP_2x3mm_P0.5mm_EP0.25x1.825mm
 Texas RNX0012C VQFN, 11 Pin (https://www.ti.com/cn/lit/ml/qfnd580a/qfnd580a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 Texas VQFN NoLead
@@ -83185,8 +82803,6 @@ Texas VQFN NoLead
 13
 12
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Texas_RPU0010A_VQFN-HR-10_2x2mm_P0.5mm
 VQFN-HR, 10 Pin (https://www.ti.com/lit/ds/symlink/tps62912.pdf#page=39)
 VQFN-HR NO LEAD
@@ -83194,7 +82810,6 @@ VQFN-HR NO LEAD
 10
 10
 Package_DFN_QFN
-<<<<<<< HEAD
 Texas_RQM0029A_VQFN-29_4x4mm_P0.4mm
 Texas RQM0029A VQFN, 29 Pin, https://www.ti.com/lit/ml/mpqf573/mpqf573.pdf
 Texas-Instruments NoLead
@@ -83216,8 +82831,6 @@ Texas WQFN NoLead
 35
 25
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Texas_RSA_VQFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm
 Texas RSA VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/msp430g2001.pdf#page=44), generated with kicad-footprint-generator ipc_noLead_generator.py
 Texas VQFN NoLead
@@ -84135,7 +83748,6 @@ VQFN NoLead
 75
 49
 Package_DFN_QFN
-<<<<<<< HEAD
 VQFN-48-1EP_7x7mm_P0.5mm_EP4.2x4.2mm
 VQFN, 48 Pin (Based on JEDEC MO-220 variation VKKD-2 (using Figure 1), custom Exposed Pad from NXP, https://www.jedec.org/document_search?search_api_views_fulltext=MO-220, https://www.nxp.com/docs/en/package-information/SOT619-28.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 VQFN NoLead NXP_SOT619-28
@@ -84150,8 +83762,6 @@ VQFN NoLead NXP_SOT619-28
 70
 49
 Package_DFN_QFN
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm
 VQFN, 48 Pin (http://www.ti.com/lit/ds/symlink/cc1312r.pdf#page=48), generated with kicad-footprint-generator ipc_noLead_generator.py
 VQFN NoLead
@@ -84279,11 +83889,7 @@ powerpak mlp55-27l
 23
 Package_DFN_QFN
 W-PDFN-8-1EP_6x5mm_P1.27mm_EP3x3mm
-<<<<<<< HEAD
 W-PDFN, 8 Pin (https://www.mouser.com/datasheet/2/671/mt25q_qljs_u_256_aba_0-3178731.pdf#page=22), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-W-PDFN, 8 Pin (https://media-www.micron.com/-/media/client/global/documents/products/data-sheet/nor-flash/serial-nor/mt25q/die-rev-a/mt25q_qljs_u_256_aba_0.pdf#page=22), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 W-PDFN NoLead
 0
 13
@@ -84577,22 +84183,14 @@ WQFN NoLead TQFN T3857-1C T3857M-1
 39
 Package_DFN_QFN
 WQFN-42-1EP_3.5x9mm_P0.5mm_EP2.05x7.55mm
-<<<<<<< HEAD
 WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23, https://www.diodes.com/assets/Package-Files/PD-2035J_ZH42.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 WQFN NoLead
 0
 57
 43
 Package_DFN_QFN
 WQFN-42-1EP_3.5x9mm_P0.5mm_EP2.05x7.55mm_ThermalVias
-<<<<<<< HEAD
 WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23, https://www.diodes.com/assets/Package-Files/PD-2035J_ZH42.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-WQFN, 42 Pin (http://www.ti.com/lit/ds/symlink/ts3l501e.pdf#page=23), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 WQFN NoLead
 0
 82
@@ -87042,11 +86640,7 @@ lga land grid array
 12
 Package_LGA
 LGA-14_2x2mm_P0.35mm_LayoutBorder3x4y
-<<<<<<< HEAD
 LGA, 14 Pin (https://www.st.com/resource/en/datasheet/lis2dh12.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-LGA, 14 Pin (http://www.st.com/resource/en/datasheet/lis2dh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LGA NoLead
 0
 14
@@ -87074,11 +86668,7 @@ lga land grid array
 16
 Package_LGA
 LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y
-<<<<<<< HEAD
 LGA, 16 Pin (https://www.st.com/resource/en/datasheet/lis331dlh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-LGA, 16 Pin (http://www.st.com/resource/en/datasheet/lis331hh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LGA NoLead
 0
 16
@@ -87133,7 +86723,6 @@ NXP LGA NoLead
 8
 8
 Package_LGA
-<<<<<<< HEAD
 NXP_USON-8_1x1.35mm_P0.35mm
 NXP  USON, 8 Pin (https://www.nxp.com/docs/en/package-information/SOT1203.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 NXP USON NoLead SOT1203 XSON8 XSON-8
@@ -87141,8 +86730,6 @@ NXP USON NoLead SOT1203 XSON8 XSON-8
 8
 8
 Package_LGA
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Nordic_nRF9160-SIxx_LGA-102-59EP_16.0x10.5mm_P0.5mm
 nRF9160 (https://docs.nordicsemi.com/bundle/ps_nrf9160/page/mec_spec.html)
 Nordic LGA
@@ -87333,13 +86920,8 @@ LQFP QFP
 36
 Package_QFP
 LQFP-44_10x10mm_P0.8mm
-<<<<<<< HEAD
 LQFP, 44 Pin (JEDEC MS-026 variation BCB, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://www.nxp.com.cn/docs/en/package-information/98ASS23225W.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP NXP_SOT389-2 Onsemi_CASE-561AA Renesas_44-TQFP Renesas_PPG44D1 Infineon_PG-TQFP-44-801 Analog_ST-44-1
-=======
-LQFP, 44 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ASS23225W.pdf?&fsrch=1), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 44
 44
@@ -87408,22 +86990,14 @@ LQFP QFP
 65
 Package_QFP
 LQFP-64-1EP_10x10mm_P0.5mm_EP6.5x6.5mm
-<<<<<<< HEAD
 LQFP, 64 Pin (https://www.nxp.com/docs/en/package-information/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-=======
-LQFP, 64 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LQFP QFP
 0
 90
 65
 Package_QFP
 LQFP-64-1EP_10x10mm_P0.5mm_EP6.5x6.5mm_ThermalVias
-<<<<<<< HEAD
 LQFP, 64 Pin (https://www.nxp.com/docs/en/package-information/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-=======
-LQFP, 64 Pin (https://www.nxp.com/files-static/shared/doc/package_info/98ARH98426A.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 LQFP QFP
 0
 116
@@ -87493,13 +87067,8 @@ LQFP QFP
 100
 Package_QFP
 LQFP-128_14x14mm_P0.4mm
-<<<<<<< HEAD
 LQFP, 128 Pin (JEDEC MS-026 variation BEE, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=423), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP Microchip_128-Lead-Low-Profile-Plastic-Quad-Flat-Pack-(PT) Renesas_Q128.14x14
-=======
-LQFP, 128 Pin (https://www.renesas.com/eu/en/package-image/pdf/outdrawing/q128.14x14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 128
 128
@@ -87512,19 +87081,13 @@ LQFP QFP
 128
 Package_QFP
 LQFP-144-1EP_20x20mm_P0.5mm_EP6.5x6.5mm
-<<<<<<< HEAD
 LQFP, 144 Pin (JEDEC MS-026 variation BFB, 1.40mm body thickness, custom Exposed Pad from Infineon, https://www.infineon.com/dgdl/Infineon-XMC4500-DS-v01_05-EN.pdf#page=107, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP Infineon_PG-LQFP-144-24 Infineon_PG-LQFP-144-26
-=======
-LQFP, 144 Pin (https://www.infineon.com/dgdl/Infineon-XMC4500-DS-v01_05-EN.pdf?fileId=5546d46254e133b40154e1b56cbe0123), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP Infineon-PG-LQFP-144-24 Infineon-PG-LQFP-144-26
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 154
 145
 Package_QFP
 LQFP-144-1EP_20x20mm_P0.5mm_EP6.5x6.5mm_ThermalVias
-<<<<<<< HEAD
 LQFP, 144 Pin (JEDEC MS-026 variation BFB, 1.40mm body thickness, custom Exposed Pad from Infineon, https://www.infineon.com/dgdl/Infineon-XMC4500-DS-v01_05-EN.pdf#page=107, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP Infineon_PG-LQFP-144-24 Infineon_PG-LQFP-144-26
 0
@@ -87534,17 +87097,6 @@ Package_QFP
 LQFP-144_20x20mm_P0.5mm
 LQFP, 144 Pin (JEDEC MS-026 variation BFB, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=425), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP Microchip_144-Lead-Plastic-Low-Profile-Quad-Flatpack-(PL) Microsemi_TQ144
-=======
-LQFP, 144 Pin (https://www.infineon.com/dgdl/Infineon-XMC4500-DS-v01_05-EN.pdf?fileId=5546d46254e133b40154e1b56cbe0123), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP Infineon-PG-LQFP-144-24 Infineon-PG-LQFP-144-26
-0
-171
-145
-Package_QFP
-LQFP-144_20x20mm_P0.5mm
-LQFP, 144 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=425), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 144
 144
@@ -87571,13 +87123,8 @@ LQFP QFP Infineon-PG-TQFP-176-801
 177
 Package_QFP
 LQFP-176_20x20mm_P0.4mm
-<<<<<<< HEAD
 LQFP, 176 Pin (JEDEC MS-026 variation BFC, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
 LQFP QFP Onsemi_CASE-566DB Texas_PBL-(S-PQFP-G176)
-=======
-LQFP, 176 Pin (https://www.onsemi.com/pub/Collateral/566DB.PDF), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 176
 176
@@ -87737,18 +87284,12 @@ TQFP QFP
 32
 Package_QFP
 TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm
-<<<<<<< HEAD
 TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, custom Exposed Pad from Microchip, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=662), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(MW)
-=======
-44-Lead Plastic Thin Quad Flatpack (MW) - 10x10x1.0 mm Body [TQFP] With 4.5x4.5 mm Exposed Pad (see Microchip Packaging Specification 00000049BS.pdf)
-QFP 0.8
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 54
 45
 Package_QFP
-<<<<<<< HEAD
 TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm_ThermalVias
 TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, custom Exposed Pad from Microchip, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=662), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(MW)
@@ -87759,11 +87300,6 @@ Package_QFP
 TQFP-44_10x10mm_P0.8mm
 TQFP, 44 Pin (JEDEC MS-026 variation ACB, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=658), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP Microchip_44-Lead-Plastic-Thin-Quad-Flatpack-(PT)
-=======
-TQFP-44_10x10mm_P0.8mm
-TQFP, 44 Pin (JEDEC MS-026 variation ACB, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=658), generated with kicad-footprint-generator ipc_gullwing_generator.py
-TQFP QFP
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 44
 44
@@ -87923,13 +87459,8 @@ QFP 0.4
 120
 Package_QFP
 TQFP-128_14x14mm_P0.4mm
-<<<<<<< HEAD
 TQFP, 128 Pin (JEDEC MS-026 variation AEE, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP Microsemi_VQ128 Onsemi_CASE-932BB
-=======
-TQFP128 14x14 / TQFP128 CASE 932BB (see ON Semiconductor 932BB.PDF)
-QFP 0.4
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 128
 128
@@ -87942,17 +87473,12 @@ QFP 0.4
 144
 Package_QFP
 TQFP-144_20x20mm_P0.5mm
-<<<<<<< HEAD
 TQFP, 144 Pin (JEDEC MS-026 variation AFB, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
-=======
-TQFP, 144 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_gullwing_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 TQFP QFP
 0
 144
 144
 Package_QFP
-<<<<<<< HEAD
 TQFP-176_20x20mm_P0.4mm
 TQFP, 176 Pin (JEDEC MS-026 variation AFC, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP Microsemi_VQ176
@@ -87960,8 +87486,6 @@ TQFP QFP Microsemi_VQ176
 176
 176
 Package_QFP
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 TQFP-176_24x24mm_P0.5mm
 TQFP, 176 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TQFP QFP
@@ -88010,23 +87534,6 @@ Texas TQFP QFP Texas_PAP-(S-PQFP-G64) Texas_PowerPAD-64-pin-HTQFP
 0
 112
 65
-<<<<<<< HEAD
-=======
-Package_QFP
-VQFP-128_14x14mm_P0.4mm
-VQFP, 128 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_gullwing_generator.py
-VQFP QFP
-0
-128
-128
-Package_QFP
-VQFP-176_20x20mm_P0.4mm
-VQFP, 176 Pin (http://www.microsemi.com/index.php?option=com_docman&task=doc_download&gid=131095), generated with kicad-footprint-generator ipc_gullwing_generator.py
-VQFP QFP
-0
-176
-176
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Package_SIP
 PowerIntegrations_eSIP-7C
 eSIP-7C Vertical Flat Package with Heatsink Tab, https://ac-dc.power.com/sites/default/files/product-docs/topswitch-jx_family_datasheet.pdf
@@ -89288,7 +88795,6 @@ SOIC SO
 20
 9
 Package_SO
-<<<<<<< HEAD
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.71x3.7mm
 SOIC, 8 Pin (https://www.aosmd.com/res/datasheets/AOZ1284PI.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
@@ -89320,23 +88826,13 @@ Package_SO
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm
 SOIC, 8 Pin (JEDEC MS-012 variation BA (thermally enhanced), using tolerances and Exposed Pad from Texas Instruments DDA0008B, https://www.ti.com/lit/ml/pptd058j/pptd058j.pdf, https://www.ti.com/lit/ds/symlink/lm5017.pdf#page=35, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO Texas_PowerPAD
-=======
-SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm
-SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py
-SOIC SO
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 14
 9
 Package_SO
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias
-<<<<<<< HEAD
 SOIC, 8 Pin (JEDEC MS-012 variation BA (thermally enhanced), using tolerances and Exposed Pad from Texas Instruments DDA0008B, https://www.ti.com/lit/ml/pptd058j/pptd058j.pdf, https://www.ti.com/lit/ds/symlink/lm5017.pdf#page=35, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO Texas_PowerPAD
-=======
-SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py
-SOIC SO
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 23
 9
@@ -89503,11 +88999,7 @@ SOIC SO
 28
 Package_SO
 SOIC-28W_7.5x18.7mm_P1.27mm
-<<<<<<< HEAD
 SOIC, 28 Pin (https://www.es.co.th/Schemetic/PDF/AK5394A.PDF#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
-=======
-SOIC, 28 Pin (https://www.akm.com/akm/en/file/datasheet/AK5394AVS.pdf#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 SOIC SO
 0
 28
@@ -91067,7 +90559,6 @@ MicroCrystal SON NoLead MicroCrystal-RV3028-C7
 8
 8
 Package_SON
-<<<<<<< HEAD
 Microchip_USON-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm
 Microchip  USON, 10 Pin (https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/20002281C.pdf#page=14), generated with kicad-footprint-generator ipc_noLead_generator.py
 Microchip USON NoLead UDFN-10
@@ -91082,8 +90573,6 @@ Microchip USON NoLead UDFN-10
 20
 11
 Package_SON
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 NXP_XSON-16
 http://www.nxp.com/documents/outline_drawing/SOT1341-1.pdf
 NXP XSON SOT-1341
@@ -91652,22 +91141,14 @@ WSON 0.5
 11
 Package_SON
 WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm
-<<<<<<< HEAD
 WSON, 10 Pin (https://www.ti.com/lit/ml/qfnd434a/qfnd434a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-WSON, 10 Pin (https://www.ti.com/lit/ml/mpss046b/mpss046b.pdf?ts=1728800628041&ref_url=https%253A%252F%252Fwww.ti.com%252Fpackaging%252Fdocs%252Fsearchtipackages.tsp%253FpackageName%253DSON), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 WSON NoLead Texas_DPR0010A
 0
 15
 11
 Package_SON
 WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias
-<<<<<<< HEAD
 WSON, 10 Pin (https://www.ti.com/lit/ml/qfnd434a/qfnd434a.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
-=======
-WSON, 10 Pin (https://www.ti.com/lit/ml/mpss046b/mpss046b.pdf?ts=1728800628041&ref_url=https%253A%252F%252Fwww.ti.com%252Fpackaging%252Fdocs%252Fsearchtipackages.tsp%253FpackageName%253DSON), generated with kicad-footprint-generator ipc_noLead_generator.py
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 WSON NoLead Texas_DPR0010A
 0
 25
@@ -91947,20 +91428,8 @@ SC-59 hand-soldering
 3
 Package_TO_SOT_SMD
 SC-70-8
-<<<<<<< HEAD
 SOT, 8 Pin (JEDEC MO-203, variant BA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-sc-70/sot_8_05-08-1639.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SC8
-=======
-SC70-8
-SC70-8
-0
-8
-8
-Package_TO_SOT_SMD
-SC-70-8_Handsoldering
-SC70-8, Handsoldering
-SC70-8 Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 8
 8
@@ -92183,77 +91652,29 @@ CMS SOT
 8
 Package_TO_SOT_SMD
 SOT-323_SC-70
-<<<<<<< HEAD
 SOT, 3 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=148), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SC-70 SOT-323
-=======
-SOT-323, SC-70
-SOT-323 SC-70
-0
-3
-3
-Package_TO_SOT_SMD
-SOT-323_SC-70_Handsoldering
-SOT-323, SC-70 Handsoldering
-SOT-323 SC-70 Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 3
 3
 Package_TO_SOT_SMD
 SOT-343_SC-70-4
-<<<<<<< HEAD
 SOT, 4 Pin (https://www.tme.eu/Document/ced3461ed31ea70a3c416fb648e0cde7/APE8865-3.pdf#page=9), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SOT-343 SC-70-4
-=======
-SOT-343, SC-70-4
-SOT-343 SC-70-4
-0
-4
-4
-Package_TO_SOT_SMD
-SOT-343_SC-70-4_Handsoldering
-SOT-343, SC-70-4, Handsoldering
-SOT-343 SC-70-4 Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 4
 4
 Package_TO_SOT_SMD
 SOT-353_SC-70-5
-<<<<<<< HEAD
 SOT, 5 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=171, JEDEC MO-203, variant AA, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SC-88A SOT-353 SC-70-5
-=======
-SOT-353, SC-70-5
-SOT-353 SC-70-5
-0
-5
-5
-Package_TO_SOT_SMD
-SOT-353_SC-70-5_Handsoldering
-SOT-353, SC-70-5, Handsoldering
-SOT-353 SC-70-5 Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 5
 5
 Package_TO_SOT_SMD
 SOT-363_SC-70-6
-<<<<<<< HEAD
 SOT, 6 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=170, JEDEC MO-203, variant AB, https://www.jedec.org/document_search?search_api_views_fulltext=MO-203), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SC-88 SOT-363 SC-70-6 US6 UMT6 S-Mini6 TSSOP6
-=======
-SOT-363, SC-70-6, SC-88
-SOT-363 SC-70-6 SC-88
-0
-6
-6
-Package_TO_SOT_SMD
-SOT-363_SC-70-6_Handsoldering
-SOT-363, SC-70-6, SC-88, Handsoldering
-SOT-363 SC-70-6 SC-88 Handsoldering
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 0
 6
 6
@@ -92279,7 +91700,6 @@ SOT-416
 3
 3
 Package_TO_SOT_SMD
-<<<<<<< HEAD
 SOT-457T
 SOT, 6 Pin (https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/qs6k21-e.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOT TO_SOT_SMD SC-95 TSMT6
@@ -92287,8 +91707,6 @@ SOT TO_SOT_SMD SC-95 TSMT6
 6
 6
 Package_TO_SOT_SMD
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 SOT-523
 SOT523, https://www.diodes.com/assets/Package-Files/SOT523.pdf
 SOT-523
@@ -101032,7 +100450,6 @@ Logo RoHS
 0
 0
 Symbol
-<<<<<<< HEAD
 Screw_Generic_2.0x3.0mm_SilkScreen
 Mounting screw symbol
 mounting screw symbol
@@ -101040,8 +100457,6 @@ mounting screw symbol
 0
 0
 Symbol
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 Smolhaj_Scale_0.1
 BLÅHAJ , smol 50cm nominal, 1:10 scale (56mm Snoot-Flosse), MPN 205.406.63 (https://www.ikea.com/gb/en/p/blahaj-soft-toy-baby-shark-20540663/)
 Ikea Smol Haj
@@ -101350,12 +100765,26 @@ Logo WEEE
 0
 0
 TB-Footprint_Lib
+CON32_1X32_TU_HTS_SAI
+
+TS-132-T-A 
+0
+32
+32
+TB-Footprint_Lib
 CONV_SDM30-24S5
 
 
 0
 6
 6
+TB-Footprint_Lib
+HC-SR04 Ultrasonic Sonar Distance Sensor footprint
+
+
+0
+4
+1
 TB-Footprint_Lib
 IFX-PG-TO220-3-904-1
 TO,flange mount,2.54 mm pitch, 3 pin, 10.16 mm L X 4.57 mm W X 20.56 mm H body
@@ -103141,7 +102570,6 @@ THT terminal block Metz Connect Type703_RT10N03HGLU pitch 9.52mm size 28.6x12.5m
 0
 3
 3
-<<<<<<< HEAD
 TerminalBlock_Ningbo-Kagnex
 TerminalBlock_Ningbo-Kagnex_HB9500M_1x02_P9.5mm
 Barrier terminal block, Ningbo-Kagnex HB9500M, 2 pins, pitch 9.5mm, size 20.5x16mm, drill diameter 2mm, pad size 6.6mm, https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Ningbo-Kangnex-Elec-HB9500M-9-5-4P_C255007.pdf, generated with kicad-footprint-generator https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Barrier
@@ -103296,8 +102724,6 @@ THT
 0
 12
 12
-=======
->>>>>>> 5c23f94ad8e9e03a30f9801149d148a7a181c615
 TerminalBlock_Philmore
 TerminalBlock_Philmore_TB132_1x02_P5.00mm_Horizontal
 Terminal Block Philmore , 2 pins, pitch 5mm, size 10x10.2mm, drill diameter 1.2mm, pad diameter 2.4mm, http://www.philmore-datak.com/mc/Page%20197.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Philmore
