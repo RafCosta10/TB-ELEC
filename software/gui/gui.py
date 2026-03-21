@@ -375,7 +375,7 @@ shutdown_button.grid(row=3, column=0, padx=6, pady=(6, 10), sticky="ew")
 
 power_on_button = ctk.CTkButton(
     command_frame,
-    text="POWER ON (Reconnect)",
+    text="POWER ON",
     command=power_on_system
 )
 power_on_button.grid(row=3, column=1, columnspan=2, padx=6, pady=(6, 10), sticky="ew")
