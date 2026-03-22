@@ -2,6 +2,7 @@ import json
 import os
 from pathlib import Path
 import socket
+import time
 import customtkinter as ctk
 
 HOST = "127.0.0.1"
@@ -12,6 +13,9 @@ ARMED = "ARMED"
 RUNNING = "RUNNING"
 FAULT = "FAULT"
 SHUTDOWN = "SHUTDOWN"
+
+
+POWER_ON_COMMAND = "p"
 
 if os.name == "posix" and not os.environ.get("DISPLAY"):
     # Allow launching from SSH into the active local Pi desktop session.
@@ -43,6 +47,12 @@ e_stop_pressed = False
 
 sock = None
 rx_buffer = ""
+
+power_on_in_progress = False
+power_on_deadline = 0.0
+power_on_attempts_remaining = 0
+
+system_powered_on = False
 
 state_label = ctk.CTkLabel(
     app,
@@ -102,6 +112,7 @@ def set_state(new_state: str):
 
 def set_controls_enabled(enabled: bool):
     button_state = "normal" if enabled else "disabled"
+
     arm_button.configure(state=button_state)
     disarm_button.configure(state=button_state)
     start_button.configure(state=button_state)
@@ -112,7 +123,9 @@ def set_controls_enabled(enabled: bool):
     reset_button.configure(state=button_state)
     emergency_stop_button.configure(state=button_state)
     shutdown_button.configure(state=button_state)
-    power_on_button.configure(state="normal")
+
+    # Fix: POWER ON should only be pressable when system is off
+    power_on_button.configure(state="disabled" if enabled else "normal")
 
 
 def disconnect_firmware():
@@ -147,9 +160,11 @@ def connect_firmware():
 
 def send_command(cmd: str):
     if not connected or sock is None:
+        print(f"[GUI] send_command skipped; not connected. cmd={cmd!r}")
         return
 
     try:
+        print(f"[GUI] send_command -> {cmd!r}")
         sock.sendall((cmd + "\n").encode("ascii"))
     except OSError:
         disconnect_firmware()
@@ -158,8 +173,23 @@ def send_command(cmd: str):
 def apply_telemetry(payload: dict):
     global auger_rpm, target_rpm, temperature, chainage
     global voltage, current, load_factor, e_stop_pressed
+    global power_on_in_progress, power_on_deadline, system_powered_on
 
-    set_state(payload.get("state", current_state))
+    incoming_state = payload.get("state", current_state)
+
+    if power_on_in_progress:
+        if incoming_state == SHUTDOWN and time.monotonic() < power_on_deadline:
+            incoming_state = current_state
+        else:
+            power_on_in_progress = False
+
+    set_state(incoming_state)
+
+    if incoming_state == SHUTDOWN:
+        system_powered_on = False
+    else:
+        system_powered_on = True
+
     voltage = float(payload.get("voltage", voltage))
     current = float(payload.get("current", current))
     temperature = float(payload.get("temperature", temperature))
@@ -212,13 +242,48 @@ def update_view():
     estop_label.configure(text=f"E-STOP: {'PRESSED' if e_stop_pressed else 'Released'}")
 
 
-def telemetry_tick():
+def attempt_power_on_reconnect():
+    global power_on_attempts_remaining
+
+    if current_state == SHUTDOWN and not system_powered_on:
+        return
+
+    if connected:
+        if POWER_ON_COMMAND:
+            send_command(POWER_ON_COMMAND)
+        return
+
+    if power_on_attempts_remaining <= 0:
+        print("[GUI] power on reconnect attempts exhausted")
+        return
+
+    print(f"[GUI] power on reconnect attempt; remaining={power_on_attempts_remaining}")
     connect_firmware()
+    power_on_attempts_remaining -= 1
+
+    if connected:
+        if POWER_ON_COMMAND:
+            send_command(POWER_ON_COMMAND)
+        update_view()
+        return
+
+    app.after(250, attempt_power_on_reconnect)
+
+
+def telemetry_tick():
+    global power_on_in_progress
+
+    if not connected and system_powered_on:
+        connect_firmware()
+
     poll_firmware()
 
-    if connected and current_state != SHUTDOWN:
+    if power_on_in_progress and time.monotonic() >= power_on_deadline:
+        power_on_in_progress = False
+
+    if system_powered_on:
         set_controls_enabled(True)
-    elif not connected:
+    else:
         set_controls_enabled(False)
 
     update_view()
@@ -357,11 +422,45 @@ reset_button.grid(row=2, column=2, padx=6, pady=6, sticky="ew")
 
 
 def shutdown_system():
+    global power_on_in_progress, power_on_deadline, power_on_attempts_remaining
+    global system_powered_on
+
+    print("[GUI] shutdown button pressed")
+    power_on_in_progress = False
+    power_on_deadline = 0.0
+    power_on_attempts_remaining = 0
+
+    system_powered_on = False
+    set_state(SHUTDOWN)
     send_command("x")
+    disconnect_firmware()
+    set_controls_enabled(False)
+    update_view()
 
 
 def power_on_system():
+    global power_on_in_progress, power_on_deadline, power_on_attempts_remaining
+    global system_powered_on
+
+    print("[GUI] power on button pressed")
+
+    power_on_in_progress = True
+    power_on_deadline = time.monotonic() + 2.0
+    power_on_attempts_remaining = 8
+
+    system_powered_on = True
+
+    disconnect_firmware()
+    set_state(IDLE)
     connect_firmware()
+
+    if connected and POWER_ON_COMMAND:
+        send_command(POWER_ON_COMMAND)
+    else:
+        app.after(250, attempt_power_on_reconnect)
+
+    set_controls_enabled(True)
+    update_view()
 
 
 shutdown_button = ctk.CTkButton(
@@ -375,7 +474,7 @@ shutdown_button.grid(row=3, column=0, padx=6, pady=(6, 10), sticky="ew")
 
 power_on_button = ctk.CTkButton(
     command_frame,
-    text="POWER ON",
+    text="POWER ON (Reconnect)",
     command=power_on_system
 )
 power_on_button.grid(row=3, column=1, columnspan=2, padx=6, pady=(6, 10), sticky="ew")
