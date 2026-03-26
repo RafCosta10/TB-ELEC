@@ -1,20 +1,15 @@
 /*
   Motor and Ultrasonic Sensor Test for Arduino
 
-  Pin Configuration:
-  - Motor (via MOSFET): pin 23
-  - Ultrasonic Echo: pin 25
-  - Ultrasonic Trig: pin 16
-
   Controls through Serial Monitor:
   - Send 's' to start motor
   - Send 'x' to stop motor
   - Send 'q' to print quit message (Arduino keeps running unless reset)
 */
 
-const int MOTOR_PIN = 23;
-const int ULTRASONIC_TRIG = 16;
-const int ULTRASONIC_ECHO = 25;
+const int MOTOR_PIN = 2;
+const int ULTRASONIC_TRIG = 3;
+const int ULTRASONIC_ECHO = 4;
 
 bool motorRunning = false;
 
