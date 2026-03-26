@@ -1,0 +1,10 @@
+For Ultrasonic Sonar Distance Sensor: Need 3 5V VCC(5V) TRIG(5V) ECHO(5V) GND(GND) pins 1 GND pin
+For DC/DC converter: Need 6 pins +VIN(24V) -VIN(GND) +VOUT(5V) -VOUT(GND) 
+*DC/DC converter control notes* Open switch allows it to run closed tells it to stop from logic in the DC DC converter. So we need a switch
+FOR switch: 4 connects to ground by itslef. 3 connects to gnd through a trace to 2 -VIN of D/DC converter . 1 connects to 4 control in the converter trhough a trace. (Ryan note: Each hole has its own thing then trace connects the holes)
+For MOSSFET: VDSS Drain Gate source. Put voltage through gate then it contorls where current goes. Gate threshold voltage is 1V so thats difference between Gate and Source.
+*Important note for Olivia* We need resisotr to make VGS = 1.5V
+Flyback diode: Prevent current
+Timer --> Sends signal to raspberry pi so when the timer stops the pi stops working
+
+Next time: We need to figure out where diodes go and what the timer
