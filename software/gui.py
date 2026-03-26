@@ -45,9 +45,6 @@ current = 0.0
 load_factor = 1.0
 e_stop_pressed = False
 
-temp_flash_on = False
-last_flash_time = 0.0
-
 sock = None
 rx_buffer = ""
 
@@ -237,55 +234,12 @@ def poll_firmware():
 
 
 def update_view():
-    global temp_flash_on, last_flash_time
-
     conn_label.configure(text=f"Connected to controller: {'YES' if connected else 'NO'}")
     voltage_label.configure(text=f"Voltage: {voltage:.3f} V" if connected else "Voltage: --- V")
     current_label.configure(text=f"Current: {current:.3f} A" if connected else "Current: --- A")
+    temp_label.configure(text=f"Temperature: {temperature:.2f} C" if connected else "Temperature: --- C")
     rpm_label.configure(text=f"RPM: {auger_rpm:.0f} / {target_rpm:.0f}" if connected else "RPM: --- / ---")
     estop_label.configure(text=f"E-STOP: {'PRESSED' if e_stop_pressed else 'Released'}")
-
-    if not connected:
-        temp_label.configure(
-            text="Temperature: --- C",
-            fg_color="transparent",
-            text_color="white"
-        )
-        return
-
-    if temperature > 80:
-        now = time.monotonic()
-        if now - last_flash_time > 0.3:
-            temp_flash_on = not temp_flash_on
-            last_flash_time = now
-
-        if temp_flash_on:
-            temp_label.configure(
-                text=f"TEMPERATURE CRITICAL: {temperature:.1f} C",
-                fg_color="red",
-                text_color="white"
-            )
-        else:
-            temp_label.configure(
-                text=f"TEMPERATURE CRITICAL: {temperature:.1f} C",
-                fg_color="transparent",
-                text_color="red"
-            )
-
-    elif temperature > 75:
-        temp_label.configure(
-            text=f"Temperature Warning: {temperature:.2f} C",
-            fg_color="transparent",
-            text_color="orange"
-        )
-
-    else:
-        temp_flash_on = False
-        temp_label.configure(
-            text=f"Temperature: {temperature:.2f} C",
-            fg_color="transparent",
-            text_color="white"
-        )
 
 
 def attempt_power_on_reconnect():
@@ -520,7 +474,7 @@ shutdown_button.grid(row=3, column=0, padx=6, pady=(6, 10), sticky="ew")
 
 power_on_button = ctk.CTkButton(
     command_frame,
-    text="POWER ON",
+    text="POWER ON (Reconnect)",
     command=power_on_system
 )
 power_on_button.grid(row=3, column=1, columnspan=2, padx=6, pady=(6, 10), sticky="ew")
